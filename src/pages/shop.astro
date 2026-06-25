@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Shop',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText
+    tagline="Shop"
+    title="Discover tools, templates, and resources for founders"
+    subtitle="Explore curated digital products, playbooks, and founder-ready assets designed to accelerate execution and clarity."
+    callToAction={{ text: 'Contact us', href: '/contact' }}
+  />
+
+  <Features2
+    title="What’s available"
+    columns={3}
+    items={[
+      {
+        title: 'Resource bundles',
+        description: 'Foundational templates and workflows for operations, marketing, and product delivery.',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Founder playbooks',
+        description: 'Actionable guides for launching, scaling, and building systems without growing complexity.',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Consulting add-ons',
+        description: 'Connect with our team to tailor digital tools and execution support for your venture.',
+        icon: 'tabler:shopping-cart',
+      },
+    ]}
+  />
+</Layout>

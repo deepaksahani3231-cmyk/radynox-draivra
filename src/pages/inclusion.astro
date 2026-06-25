@@ -1,0 +1,42 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Inclusion',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText
+    tagline="Inclusion"
+    title="Creating founder support that welcomes every perspective"
+    subtitle="Radynox-Draivra values diverse thinking, accessibility, and equitable experiences across our founder partnerships."
+    callToAction={{ text: 'Contact us', href: '/contact' }}
+  />
+
+  <Features2
+    title="What inclusion means to us"
+    columns={3}
+    items={[
+      {
+        title: 'Accessible support',
+        description:
+          'We design communication, processes, and digital experiences that are inclusive and easy to work with.',
+        icon: 'tabler:wheelchair',
+      },
+      {
+        title: 'Diverse perspectives',
+        description:
+          'We value different backgrounds in our work and seek partnerships that uplift underrepresented founders.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Transparent process',
+        description: 'We keep our work clear, fair, and respectful so every founder feels supported and informed.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  />
+</Layout>

@@ -1,0 +1,239 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Pricing',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    tagline="Pricing"
+    title="Support plans for early-stage teams and curious builders"
+    subtitle="Choose an engagement that gives you practical options and clearer next steps."
+  />
+
+  <!-- Pricing Widget ******************* -->
+
+  <Prices
+    title="Support plans"
+    subtitle="Flexible packages for access, guidance, and practical help."
+    prices={[
+      {
+        title: 'Start',
+        subtitle: 'Best for solo builders',
+        price: 499,
+        period: 'per month',
+        items: [
+          {
+            description: 'Discovery conversation',
+          },
+          {
+            description: 'Early-stage guidance hours',
+          },
+          {
+            description: 'Basic pathway mapping',
+          },
+          {
+            description: 'Email follow-up',
+          },
+        ],
+        callToAction: {
+          target: '_self',
+          text: 'Contact us',
+          href: '/contact',
+        },
+      },
+      {
+        title: 'Grow',
+        subtitle: 'Ideal for early-stage teams',
+        price: 1299,
+        period: 'per month',
+        items: [
+          {
+            description: 'Dedicated support hours',
+          },
+          {
+            description: 'Systems and workflow setup',
+          },
+          {
+            description: 'Project coordination',
+          },
+          {
+            description: 'Bi-weekly check-ins',
+          },
+          {
+            description: 'Priority response',
+          },
+        ],
+        callToAction: {
+          target: '_self',
+          text: 'Contact us',
+          href: '/contact',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'most popular',
+      },
+      {
+        title: 'Partner',
+        subtitle: 'For builders seeking deeper alignment',
+        price: 2499,
+        period: 'per month',
+        items: [
+          {
+            description: 'Extended support hours',
+          },
+          {
+            description: 'Ongoing systems guidance',
+          },
+          {
+            description: 'Project delivery support',
+          },
+          {
+            description: 'Connection strategy and next-step guidance',
+          },
+        ],
+        callToAction: {
+          target: '_self',
+          text: 'Contact us',
+          href: '/contact',
+        },
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Why these plans matter"
+    subtitle="Pick a plan that gives you practical support, clear options, and affordable entry."
+    columns={2}
+    items={[
+      {
+        title: 'Tiered Pricing Plans',
+        description: 'Choose from plans designed to match different budgets and early-stage needs.',
+        icon: 'tabler:stairs',
+      },
+      {
+        title: 'Transparent Pricing',
+        description: 'Clear pricing details for each plan, with no hidden costs.',
+        icon: 'tabler:flip-vertical',
+      },
+      {
+        title: 'Accessible onboarding',
+        description: 'We help you start with a practical, transparent entry point.',
+        icon: 'tabler:accessible',
+      },
+      {
+        title: 'Plan support',
+        description: 'Select a level of support that fits your current focus and stage.',
+        icon: 'tabler:chevrons-up',
+      },
+      {
+        title: 'Flexible path',
+        description: 'Move between plans as your needs evolve and your next steps become clearer.',
+        icon: 'tabler:repeat',
+      },
+      {
+        title: 'Support clarity',
+        description: 'Questions answered through email, chat, or phone with simple guidance.',
+        icon: 'tabler:headset',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="How it works"
+    tagline="From discovery to direction"
+    isReversed={true}
+    items={[
+      {
+        title: 'Explore your stage',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Select a plan',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Talk with our team',
+        icon: 'tabler:message-circle',
+      },
+      {
+        title: 'Confirm your next step',
+        icon: 'tabler:circle-check',
+      },
+      {
+        title: 'Begin practical guidance',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Review progress',
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Keep moving forward',
+        icon: 'tabler:repeat',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Pricing FAQs"
+    subtitle="Answering the most common questions about how our support plans work."
+    columns={1}
+    items={[
+      {
+        title: 'Do the plans include support?',
+        description: 'Yes, each plan includes access to our team for questions and guidance about your next step.',
+      },
+      {
+        title: 'Is there a trial period?',
+        description: "We don't offer trial periods, but we can start with a conversation to see what fits your needs.",
+      },
+      {
+        title: 'Can I switch plans?',
+        description: 'Yes, you can upgrade or change plans as your needs evolve over time.',
+      },
+      {
+        title: 'What payment methods are accepted?',
+        description: 'We accept major credit cards and secure payment methods for convenience and safety.',
+      },
+      {
+        title: 'Are there any hidden fees?',
+        description: 'No, the listed cost covers the support deliverables for each plan, with no hidden fees.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Ready to choose the right plan?"
+    subtitle="Reach out and we’ll help you find the plan that fits your stage."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact us',
+        href: '/contact',
+      },
+    ]}
+  />
+</Layout>

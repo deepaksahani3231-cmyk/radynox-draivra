@@ -1,0 +1,6 @@
+services:
+  radynox-draivra:
+    build: .
+    container_name: radynox-draivra
+    ports:
+      - 8080:8080

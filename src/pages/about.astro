@@ -1,0 +1,151 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'About us',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="About Radynox-Draivra"
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Community of builders',
+    }}
+  >
+    <Fragment slot="title">
+      A bridge for people who need access, clarity, and a fair chance in the ecosystem.
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Radynox-Draivra exists because talented founders and builders often struggle to find where to start, who to talk
+      to, and which opportunities fit their stage.
+    </Fragment>
+  </Hero>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="What we measure"
+    stats={[
+      { title: 'People reached', amount: '24' },
+      { title: 'Conversations started', amount: '1.2K' },
+      { title: 'Resources shared', amount: '16' },
+      { title: 'Connections built', amount: '4' },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="The challenges we address"
+    subtitle="The kinds of gaps we help people close."
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Access gaps',
+        description:
+          'Many early-stage builders do not know where to start, who to talk to, or how to enter the ecosystem.',
+        icon: 'tabler:map-search',
+      },
+      {
+        title: 'Affordability barriers',
+        description: 'Support systems and memberships often become available only after traction, funding, or revenue.',
+        icon: 'tabler:currency-dollar-off',
+      },
+      {
+        title: 'Clarity needs',
+        description:
+          'People often need a clearer sense of the right next practical step when their ideas are still forming.',
+        icon: 'tabler:focus',
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    columns={3}
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Ecosystem navigation',
+        description: 'We help people make sense of the existing networks, programs, and communities around them.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Practical support options',
+        description: 'We connect people to resources and pathways that are realistic for their current stage.',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Community orientation',
+        description: 'We care about creating an open ecosystem where people feel welcome to explore ideas and grow.',
+        icon: 'tabler:users',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Community collaboration image',
+    }}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="How we work"
+    subtitle="A practical process grounded in listening, mapping, and sharing useful next steps."
+    items={[
+      {
+        title: 'Listen to your stage',
+        description:
+          'We start by understanding where you are, what you are trying to build, and what resources you already have.',
+      },
+      {
+        title: 'Map available paths',
+        description: 'We connect you to communities, programs, and practical resources that match your current needs.',
+      },
+      {
+        title: 'Share the next step',
+        description:
+          'We focus on one clear, practical next step rather than promising a broad roadmap or quick success.',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Our values"
+    tagline="What guides us"
+    columns={3}
+    items={[
+      {
+        title: 'Humble clarity',
+        description: 'We speak plainly about what we can and cannot do, and we avoid hype or exaggerated claims.',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'Founder-first thinking',
+        description:
+          'We design our work around the real needs of early-stage people and small teams, not around a narrow definition of “startup.”',
+        icon: 'tabler:user',
+      },
+      {
+        title: 'Community-minded',
+        description:
+          'We prioritize connections and pathways that welcome a broad range of backgrounds, locations, and resources.',
+        icon: 'tabler:heart',
+      },
+    ]}
+  />
+</Layout>

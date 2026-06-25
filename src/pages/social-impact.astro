@@ -1,0 +1,42 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Social Impact',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText
+    tagline="Social Impact"
+    title="Support that strengthens founders and communities"
+    subtitle="Radynox-Draivra invests in meaningful outcomes, helping startups build products that also make a positive impact."
+    callToAction={{ text: 'Contact us', href: '/contact' }}
+  />
+
+  <Features2
+    title="How we measure impact"
+    columns={3}
+    items={[
+      {
+        title: 'Foundational support',
+        description:
+          'We enable mission-driven founders to ship faster with practical delivery and operational systems.',
+        icon: 'tabler:building-warehouse',
+      },
+      {
+        title: 'Community focus',
+        description:
+          'Our work reflects a commitment to founders who are solving real problems, not just chasing metrics.',
+        icon: 'tabler:star',
+      },
+      {
+        title: 'Long-term value',
+        description: 'We seek opportunities where our execution support creates durable business and social momentum.',
+        icon: 'tabler:seedling',
+      },
+    ]}
+  />
+</Layout>

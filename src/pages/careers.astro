@@ -1,0 +1,42 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Careers',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText
+    tagline="Careers at Radynox-Draivra"
+    title="Build with founders, not around them"
+    subtitle="Join a small, execution-driven team that supports founders with systems, delivery, and operational momentum."
+    callToAction={{ text: 'Contact us', href: '/contact' }}
+  />
+
+  <Features2
+    title="Why join us"
+    subtitle="We hire people who care about founder success, practical delivery, and sustainable growth."
+    columns={3}
+    items={[
+      {
+        title: 'Founder empathy',
+        description: 'Work with a team that understands founder urgency and builds practical systems, not busywork.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'Hands-on delivery',
+        description:
+          'Deliver real outcomes like launch support, marketing operations, and product systems for early-stage ventures.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Growth mindset',
+        description: 'Help founders grow faster while refining processes, workflows, and repeatable operating models.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
+  />
+</Layout>

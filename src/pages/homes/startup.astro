@@ -1,0 +1,318 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Startup Landing Page',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Startup Web Demo"
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Talk to us',
+        href: '/contact',
+        icon: 'tabler:download',
+      },
+      { text: 'Learn more', href: '#features' },
+    ]}
+  >
+    <Fragment slot="title">
+      Improve <span class="hidden sm:inline">the online presence of</span> your <span
+        class="text-accent dark:text-white">Startup</span
+      > with Radynox-Draivra support
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Step into the spotlight with <span class="font-semibold">Radynox-Draivra</span>, your partner for founder-led
+      digital strategy, execution, and growth support.
+    </Fragment>
+
+    <Fragment slot="image">
+      <YouTube id="gxBkghlglTg" title="Radynox-Draivra startup support overview" />
+      <style is:inline>
+        lite-youtube {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      </style>
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="About us"
+    subtitle="We believe in the magic of turning founder ambition into deliberate digital execution. Our team simplifies growth, delivery, and systems support so startups can move with clarity and speed."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Discover the impressive impact of Radynox-Draivra"
+    subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
+    stats={[
+      { title: 'Downloads', amount: '182K' },
+      { title: 'Websites Launched', amount: '87' },
+      { title: 'User Ratings', amount: '4.8' },
+      { title: 'Satisfied Clients', amount: '116K' },
+    ]}
+  />
+
+  <!-- Brands Widget ****************** -->
+
+  <Brands
+    title="Partnerships & Collaborations"
+    subtitle="At Radynox-Draivra, we believe in the power of collaboration to drive innovation and create exceptional experiences."
+    icons={[]}
+    images={[
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
+        alt: 'Paypal',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png',
+        alt: 'Visa',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
+        alt: 'Ebay',
+      },
+
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
+        alt: 'Youtube',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png',
+        alt: 'Microsoft',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
+        alt: 'Node JS',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_1280.png',
+        alt: 'Google',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/45/meta-6850393_1280.png',
+        alt: 'Meta',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/01/29/22/53/yahoo-76684_1280.png',
+        alt: 'Yahoo',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="What services do we provide?"
+    subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+    items={[
+      {
+        title: 'Onboarding & Launch Plans',
+        description:
+          'Share clear onboarding guidance, launch plans, and activation steps so founders can move from idea to live product without confusion.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Previews & Early Feedback',
+        description:
+          'Offer transparent previews and early visual checks so your team understands the direction before full delivery.',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Launch Support',
+        description:
+          'Provide dependable guidance for implementation, iteration, and launch challenges so you can stay focused on business outcomes.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="Core capabilities for startup growth"
+    subtitle="Designed to help founders move fast, build credibility, and launch with confidence."
+    columns={3}
+    items={[
+      {
+        title: 'Modern and Professional Design',
+        description:
+          'Have a contemporary design that reflects current design trends and gives a professional impression.',
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Responsive and Mobile-Friendly',
+        description: 'Adapt seamlessly to different screen sizes and devices to ensure a consistent experience.',
+        icon: 'tabler:picture-in-picture',
+      },
+      {
+        title: 'Customizability',
+        description:
+          'Built for flexibility, allowing founders to adjust messaging, visuals, and structure to match their brand goals.',
+        icon: 'tabler:adjustments-horizontal',
+      },
+      {
+        title: 'Fast Loading Times',
+        description: 'Optimized for speed to ensure a smooth user experience and favorable search engine rankings.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Search Engine Optimization (SEO)',
+        description:
+          'Incorporate search-first content structure and messaging so your website is easier to discover by customers and partners.',
+        icon: 'tabler:arrows-right-left',
+      },
+      {
+        title: 'Compatibility',
+        description:
+          'The design and structure work seamlessly across modern platforms and devices, supporting future growth and updates.',
+        icon: 'tabler:plug-connected',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'What can Radynox-Draivra help my startup build?',
+        description:
+          'We help founders create lean marketing sites, launch-ready landing pages, branding support, and content that communicates value clearly to customers and investors.',
+      },
+      {
+        title: 'Why work with Radynox-Draivra?',
+        description:
+          'We combine founder-minded strategy with fast delivery, so you can launch sooner, iterate faster, and keep your focus on growth instead of design details.',
+      },
+      {
+        title: 'Can I review the site before launch?',
+        description:
+          'Yes. We provide early visual checkpoints and iteration rounds so you can approve messaging, visuals, and structure before the final launch.',
+      },
+      {
+        title: 'Do I need technical skills to work with you?',
+        description:
+          'No. We work with founders at every stage. If you want to be hands-on, we can collaborate. If you prefer to focus on the business, we can handle the execution end to end.',
+      },
+      {
+        title: 'Will my website be reusable for future projects?',
+        description:
+          'Yes. We build with flexibility in mind so your site can evolve as your company grows and your product expands.',
+      },
+      {
+        title: 'Support and process',
+        description:
+          'Our process includes clear guidance and review points. If you have any questions, you can always reach out to our team for support, feedback, and direction.',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Let us know how we can help"
+    subtitle="We’re here to help and answer any question you might have."
+    columns={4}
+    items={[
+      {
+        title: 'Phone',
+        icon: 'tabler:phone',
+        callToAction: {
+          target: '_blank',
+          text: 'Call us',
+          href: '/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Email',
+        icon: 'tabler:mail',
+        callToAction: {
+          target: '_blank',
+          text: 'Write to us',
+          href: '/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Chat with sales',
+        icon: 'tabler:message-circle',
+        callToAction: {
+          target: '_blank',
+          text: 'Start chatting',
+          href: '/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Chat with support',
+        icon: 'tabler:message-circle',
+        callToAction: {
+          target: '_blank',
+          text: 'Start chatting',
+          href: '/',
+          variant: 'link',
+        },
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Talk to us',
+        href: '/contact',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">Be a part of our vision</Fragment>
+
+    <Fragment slot="subtitle">
+      Discover a dynamic work environment, unparalleled growth opportunities, and the chance to make a meaningful
+      impact.
+    </Fragment>
+  </CallToAction>
+</Layout>

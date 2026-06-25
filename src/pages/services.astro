@@ -1,0 +1,200 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Services',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Services"
+    title="Practical support for early-stage teams and curious builders"
+    subtitle="Guidance and connections for people navigating early-stage projects and small businesses."
+    actions={[{ variant: 'primary', target: '_self', text: 'Contact us', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Support community image',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="What we offer"
+    subtitle="Support options for people who need clarity, access, and practical next steps."
+    columns={3}
+    items={[
+      {
+        title: 'Ecosystem navigation',
+        description:
+          'We help you understand the communities, programs, and resources that may be useful for your current stage.',
+        icon: 'tabler:compass',
+      },
+      {
+        title: 'Practical delivery',
+        description: 'Support for digital presence, workflows, and small projects that keep your work moving forward.',
+        icon: 'tabler:devices',
+      },
+      {
+        title: 'Small-team systems',
+        description:
+          'We help create processes and tools that fit your resources and bring more consistency to daily work.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Opportunity discovery',
+        description: 'We share relevant programs, networks, and pathways without overpromising what comes next.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Project-based help',
+        description: 'Deliver defined initiatives like launch support, system setup, and digital product coordination.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'Community connection',
+        description: 'We connect people with networks and resources that can grow alongside their journey.',
+        icon: 'tabler:users-group',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Practical support',
+        description: 'We focus on realistic work that helps people move forward without adding unnecessary complexity.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'Flexible engagement',
+        description: 'Choose from conversation-based guidance, project help, or longer-term connections.',
+        icon: 'tabler:layout-grid',
+      },
+      {
+        title: 'Clear alignment',
+        description: 'Support that is transparent and aligned with your current goals, not with broad promises.',
+        icon: 'tabler:user',
+      },
+      {
+        title: 'Sustainable systems',
+        description: 'We build processes and documentation that make daily work more predictable over time.',
+        icon: 'tabler:chart-bar',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Support services image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Support that respects your stage
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Time back for builders',
+        description: 'We help people reclaim focus by reducing day-to-day friction and unclear next steps.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Reduced stress',
+        description: 'Clear guidance and practical resources reduce confusion and prevent overload.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Stronger operations',
+        description: 'We build consistent workflows that help small teams move more predictably.',
+        icon: 'tabler:coin',
+      },
+      {
+        title: 'Practical connection',
+        description: 'Our support is meant to be useful and accessible, not exclusive or overpromised.',
+        icon: 'tabler:file-download',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Benefits image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Support built around your next step
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Builder feedback"
+    testimonials={[
+      {
+        testimonial: `Radynox-Draivra helped us launch our support systems quickly and reliably. The team’s practical focus was exactly what we needed.`,
+        name: 'Deepak Sahani',
+        job: 'Early-stage builder',
+        image: {
+          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          alt: 'Builder testimonial image',
+        },
+      },
+      {
+        testimonial: `Their practical support allowed us to focus on product and customers. They were responsive, structured, and clear.`,
+        name: 'Priya Sharma',
+        job: 'Small team lead',
+        image: {
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Builder testimonial image',
+        },
+      },
+      {
+        testimonial: `Working with Radynox-Draivra cleared roadblocks and gave us the bandwidth to keep moving.`,
+        name: 'Arjun Verma',
+        job: 'Small business owner',
+        image: {
+          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          alt: 'Builder testimonial image',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '_self',
+      text: 'Contact us',
+      href: '/contact',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact us',
+        href: '/contact',
+      },
+    ]}
+    title="Ready to explore practical support?"
+    subtitle="Reach out and we’ll help you find the next step that fits your stage."
+  />
+</Layout>

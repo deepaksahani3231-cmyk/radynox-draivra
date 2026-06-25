@@ -1,0 +1,385 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Radynox-Draivra — Access, clarity, and community for curious builders',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Find your next step',
+        href: '#how',
+        icon: 'tabler:compass',
+      },
+      { text: 'Talk to us', href: '#contact' },
+    ]}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Radynox-Draivra community image' }}
+  >
+    <Fragment slot="title"> A more accessible path into the startup ecosystem. </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Radynox-Draivra helps curious builders discover the right opportunities, connect with the right people, and take
+        the next practical step without promising quick success or replacing existing support systems.</span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Talent is everywhere. Access is not.</span>
+      Every journey starts with clarity, access, and the confidence to move forward.
+    </Fragment>
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note
+    title="Our mission:"
+    description="Help people enter the ecosystem with greater access, affordable entry points, and honest guidance for their next practical step."
+  />
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    tagline="Who we welcome"
+    title="Students, builders, founders, and curious creators"
+    subtitle="Whether you are exploring an idea, building an early-stage project, or growing a small business, you should feel welcome."
+    items={[
+      {
+        title: 'Students and aspiring entrepreneurs',
+        description:
+          'For people who are learning, testing ideas, and looking for an honest first entry point into the ecosystem.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Idea-stage builders',
+        description:
+          'For innovators who want clarity about the next practical step before investing more time or money.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Early-stage founders',
+        description:
+          'For teams with limited runway who need affordable ways to discover useful support and connections.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Researchers and professionals',
+        description:
+          'For people who want to turn their work into a project, product, or community with clearer options.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'Small businesses',
+        description:
+          'For businesses that need practical guidance, not hype, to navigate the next stage of their growth.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Curious builders',
+        description:
+          'For those who may not self-identify as founders yet but are ready to explore opportunities and connect with others.',
+        icon: 'tabler:compass',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Why it matters"
+    title="Access and clarity for the people the ecosystem often misses"
+    items={[
+      {
+        title: 'Accessible entry points',
+        description:
+          'Many programs and communities are visible only after traction or funding. We help people find pathways before that stage.',
+      },
+      {
+        title: 'Practical clarity',
+        description:
+          'We focus on helping people understand what their next step could be, whether that is a conversation, a community, or a practical resource.',
+      },
+      {
+        title: 'Ecosystem connection',
+        description:
+          'We do not replace incubators, mentors, or investors. We act as a bridge to the networks and opportunities that already exist.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'People connecting around ideas',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">A trusted ecosystem layer</h3>
+      We help people discover the right support, not promise they will be the best or that every path is the same.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Discovery, not pressure',
+        description:
+          'We help people identify the options that fit their stage, resources, and goals without overpromising outcomes.',
+      },
+      {
+        title: 'Connections that fit',
+        description:
+          'We surface people, programs, and opportunities that may be more useful than a generic “startup” checklist.',
+      },
+      {
+        title: 'Affordable entry paths',
+        description:
+          'We aim to highlight resources and communities that are easier to access before traction, funding, or revenue.',
+      },
+      {
+        title: 'A welcoming ecosystem',
+        description: 'We believe every journey starts with access, clarity, and the confidence to take the next step.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      alt: 'Blueprint image for an accessible plan',
+    }}
+  >
+    <Fragment slot="content">We make next steps easier to see, even when the path feels unclear.</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: 'Listen first',
+        description:
+          'We start by understanding where you are and what you are trying to build, not by fitting you into a predefined program.',
+      },
+      {
+        title: 'Map what exists',
+        description: 'We point to communities, tools, and support systems that already exist and may be useful now.',
+      },
+      {
+        title: 'Share practical options',
+        description: 'We focus on clear, realistic next steps rather than promising a shortcut to success.',
+      },
+      {
+        title: 'Stay connected',
+        description:
+          'We want people to feel welcome, informed, and supported as they move forward, whatever their journey looks like.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'People planning together',
+    }}
+  >
+    <Fragment slot="content">A practical guide for people taking their next step into the ecosystem.</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="how"
+    title="How Radynox-Draivra supports your journey"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Start with your stage</span>',
+        description: 'Tell us where you are: idea, prototype, early growth, or simply exploring new possibilities.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Find relevant paths</span>',
+        description: 'We surface the communities, programs, and resources that may be most useful for your next step.',
+        icon: 'tabler:map-pin',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Connect and learn</span>',
+        description:
+          'We help you connect with people, opportunities, and practical support without overpromising results.',
+        icon: 'tabler:heart-handshake',
+      },
+      {
+        title: 'Keep moving',
+        description:
+          'Whether your next step is research, a project, or a new connection, we help you move forward with more confidence.',
+        icon: 'tabler:arrow-up-right',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Guided journey image',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="What Radynox-Draivra stands for"
+    subtitle="A humble, practical, and community-oriented approach."
+    tagline="Our approach"
+    items={[
+      {
+        title: 'Access over hype',
+        description:
+          'We focus on helping more people enter the ecosystem instead of making grand claims about success.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Clarity over confusion',
+        description: 'We help people understand what comes next, not just what looks exciting from a distance.',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'Community over exclusivity',
+        description: 'We look for networks and resources that welcome a broad range of backgrounds and stages.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Practical over perfect',
+        description: 'We share the next practical step, even when it is small and not headline-grabbing.',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Bridge, not replacement',
+        description:
+          'We connect people to existing mentors, programs, and support systems rather than trying to replace them.',
+        icon: 'tabler:link',
+      },
+      {
+        title: 'Fair chance',
+        description:
+          'We believe every founder and builder deserves a fair chance, regardless of background, location, or resources.',
+        icon: 'tabler:scale',
+      },
+      {
+        title: 'Curiosity welcomed',
+        description: 'Not everyone arrives as a founder. Some arrive as curious builders, and that is enough.',
+        icon: 'tabler:compass',
+      },
+      {
+        title: 'Actionable insight',
+        description: 'We aim to make the next step clear, practical, and easier to take.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Room to grow',
+        description: 'People can start here without needing traction, funding, or a perfect plan.',
+        icon: 'tabler:chart-line',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Stories and practical ideas for curious builders"
+    information={`Explore articles, guides, and reflections for students, early-stage teams, and people learning how to enter the startup ecosystem.`}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Answers for people who want access, clarity, and direction."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'What is Radynox-Draivra?',
+        description:
+          'A trusted ecosystem layer that helps people discover opportunities, build connections, and take the next practical step.',
+      },
+      {
+        title: 'Who is this for?',
+        description:
+          'Students, aspiring entrepreneurs, innovators, researchers, professionals, idea-stage builders, early-stage founders, and small business owners.',
+      },
+      {
+        title: 'Do you replace incubators, mentors, or investors?',
+        description: 'No. We help people find the right existing resources and support systems, not replace them.',
+      },
+      {
+        title: 'What does access mean here?',
+        description:
+          'Access means knowing where to start, who to talk to, and which opportunities fit your current stage.',
+      },
+      {
+        title: 'How does Radynox-Draivra keep support affordable?',
+        description:
+          'We aim to highlight pathways and resources that are accessible before traction, funding, or revenue.',
+      },
+      {
+        title: 'How do I get started?',
+        description: 'Reach out through our contact page to talk through the most useful next step for your journey.',
+      },
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'People reached', amount: '24' },
+      { title: 'Conversations started', amount: '1.2K' },
+      { title: 'Opportunities shared', amount: '16' },
+      { title: 'Connections built', amount: '4' },
+    ]}
+  />
+
+  <!-- Contact anchor for hero CTA -->
+  <section id="contact" class="scroll-mt-24">
+    <CallToAction
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Find your next step',
+          href: '/contact',
+          icon: 'tabler:compass',
+        },
+      ]}
+    >
+      <Fragment slot="title"> A more open, accessible ecosystem for curious builders </Fragment>
+
+      <Fragment slot="subtitle">
+        Discover practical options, community connections, and clearer next steps without the usual startup hype.
+      </Fragment>
+    </CallToAction>
+  </section>
+</Layout>

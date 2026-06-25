@@ -1,0 +1,80 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Join our mission',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Join our mission"
+    title="Help make access and clarity real for curious builders"
+    subtitle="Partner with us to connect people to practical support, honest pathways, and the communities they need next."
+    actions={[
+      { variant: 'primary', text: 'Contact us', href: '/contact' },
+      { text: 'Visit about page', href: '/about' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'People collaborating in a meeting',
+    }}
+  />
+
+  <Features2
+    title="Why join the mission"
+    subtitle="A practical way to support people who need a fairer route into the ecosystem."
+    tagline="What this mission stands for"
+    columns={3}
+    items={[
+      {
+        title: 'Make access easier',
+        description: 'Help people find pathways and resources before they need traction, funding, or a polished plan.',
+        icon: 'tabler:map-search',
+      },
+      {
+        title: 'Share honest next steps',
+        description:
+          'Encourage a mindset that values clarity and practical progress over hype and exaggerated promises.',
+        icon: 'tabler:compass',
+      },
+      {
+        title: 'Build community',
+        description:
+          'Create more room for students, curious builders, and small businesses to connect with useful networks.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Keep support grounded',
+        description: 'Focus on the real support people need now, not the labels they do or do not carry.',
+        icon: 'tabler:heart-handshake',
+      },
+      {
+        title: 'Create affordable entry points',
+        description: 'Help make early-stage resources and practical guidance more accessible and easy to start with.',
+        icon: 'tabler:coin',
+      },
+      {
+        title: 'Stay humble and honest',
+        description:
+          'Champion work that is clear about what it can offer rather than promising to replace existing mentors or investors.',
+        icon: 'tabler:heart',
+      },
+    ]}
+  />
+
+  <CallToAction
+    title="Ready to join the mission?"
+    subtitle="Get in touch and we’ll share how you can help people step into the ecosystem with confidence."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact us',
+        href: '/contact',
+      },
+    ]}
+  />
+</Layout>
