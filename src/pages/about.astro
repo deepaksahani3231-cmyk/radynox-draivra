@@ -7,7 +7,8 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'About Radynox-Draivra | Founder Execution Systems',
+  description: 'Helping founders build operational systems, scale sustainably, and move from chaos to clarity.',
 };
 ---
 
@@ -17,56 +18,55 @@ const metadata = {
   <Hero
     tagline="About Radynox-Draivra"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Community of builders',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Founder-led operations and execution',
     }}
   >
     <Fragment slot="title">
-      A bridge for people who need access, clarity, and a fair chance in the ecosystem.
+      We help founders move from chaos to <span class="text-accent dark:text-white">operational clarity</span>.
     </Fragment>
 
     <Fragment slot="subtitle">
-      Radynox-Draivra exists because talented founders and builders often struggle to find where to start, who to talk
-      to, and which opportunities fit their stage.
+      Radynox-Draivra exists because most founders struggle with the same problems: unclear workflows, scattered knowledge, founder bottlenecks, and the constant pressure of execution. We provide the systems, frameworks, and guidance to make operations scalable and sustainable.
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="What we measure"
+    title="Our Impact"
     stats={[
-      { title: 'People reached', amount: '24' },
-      { title: 'Conversations started', amount: '1.2K' },
-      { title: 'Resources shared', amount: '16' },
-      { title: 'Connections built', amount: '4' },
+      { title: 'Founders Supported', amount: '500+' },
+      { title: 'Systems Implemented', amount: '200+' },
+      { title: 'Revenue Generated (combined)', amount: '$50M+' },
+      { title: 'Team Members Hired', amount: '1K+' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="The challenges we address"
-    subtitle="The kinds of gaps we help people close."
+    title="Founder challenges we solve"
+    subtitle="The operational gaps every growing founder faces."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Access gaps',
+        title: 'Founder bottleneck',
         description:
-          'Many early-stage builders do not know where to start, who to talk to, or how to enter the ecosystem.',
-        icon: 'tabler:map-search',
+          'Everything flows through the founder. Decisions slow, knowledge gets lost, and scaling becomes impossible without systems.',
+        icon: 'tabler:alert-circle',
       },
       {
-        title: 'Affordability barriers',
-        description: 'Support systems and memberships often become available only after traction, funding, or revenue.',
-        icon: 'tabler:currency-dollar-off',
+        title: 'Execution pressure',
+        description: 'Constant firefighting instead of strategy. No clear workflows, scattered processes, unclear responsibilities.',
+        icon: 'tabler:alert-triangle',
       },
       {
-        title: 'Clarity needs',
+        title: 'Scale without systems',
         description:
-          'People often need a clearer sense of the right next practical step when their ideas are still forming.',
-        icon: 'tabler:focus',
+          'Adding team members breaks things because there are no documented processes. Quality declines as you grow.',
+        icon: 'tabler:trending-up',
       },
     ]}
   />
@@ -78,24 +78,24 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'Ecosystem navigation',
-        description: 'We help people make sense of the existing networks, programs, and communities around them.',
-        icon: 'tabler:brain',
+        title: 'Systems design',
+        description: 'We design operational systems that scale: hiring, financial management, decision-making frameworks, team communication.',
+        icon: 'tabler:layout-grid',
       },
       {
-        title: 'Practical support options',
-        description: 'We connect people to resources and pathways that are realistic for their current stage.',
-        icon: 'tabler:tool',
+        title: 'Implementation support',
+        description: 'We guide you through adoption, train your team, and iterate based on real-world feedback.',
+        icon: 'tabler:hammer',
       },
       {
-        title: 'Community orientation',
-        description: 'We care about creating an open ecosystem where people feel welcome to explore ideas and grow.',
+        title: 'Founder community',
+        description: 'You\'re not alone. Connect with other founders solving the same problems and learning from shared experience.',
         icon: 'tabler:users',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Community collaboration image',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Founder systems and operations',
     }}
   />
 
