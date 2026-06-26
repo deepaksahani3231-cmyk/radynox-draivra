@@ -11,8 +11,6 @@ import Features3 from '~/components/widgets/Features3.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Brands from '~/components/widgets/Brands.astro';
 
-import { YouTube } from 'astro-embed';
-
 const metadata = {
   title: 'Startup Landing Page',
 };
@@ -46,13 +44,29 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="image">
-      <YouTube id="gxBkghlglTg" title="Radynox-Draivra startup support overview" />
-      <style is:inline>
-        lite-youtube {
-          margin: 0 auto;
-          max-width: 100%;
-        }
-      </style>
+      <div class="bg-gradient-to-br from-blue-100 to-blue-50 dark:from-slate-800 dark:to-slate-900 rounded-lg p-8 flex flex-col items-center justify-center min-h-96">
+        <div class="text-center space-y-4">
+          <div class="text-5xl font-bold text-blue-600 dark:text-blue-400">→</div>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white">From Idea to Execution</h3>
+          <p class="text-gray-600 dark:text-gray-300 max-w-sm">
+            Direct, practical building support — step by step. Not mentorship. Real execution guidance.
+          </p>
+          <ul class="space-y-2 text-left max-w-sm mx-auto">
+            <li class="flex items-start">
+              <span class="text-green-600 dark:text-green-400 mr-3 font-bold">✓</span>
+              <span class="text-gray-700 dark:text-gray-300">Founder-led digital strategy</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 dark:text-green-400 mr-3 font-bold">✓</span>
+              <span class="text-gray-700 dark:text-gray-300">Operations clarity and systems</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 dark:text-green-400 mr-3 font-bold">✓</span>
+              <span class="text-gray-700 dark:text-gray-300">Sustainable growth execution</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </Fragment>
   </Hero>
 

@@ -47,6 +47,10 @@ export const headerData = {
           href: getPermalink('/join-mission'),
         },
         {
+          text: 'Draivra Discovery Program',
+          href: getPermalink('/draivra-discovery'),
+        },
+        {
           text: 'Contact',
           href: getPermalink('/contact'),
         },

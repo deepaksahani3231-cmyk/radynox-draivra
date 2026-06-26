@@ -1,0 +1,233 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+
+const metadata = {
+  title: 'Draivra Discovery Program',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+  <HeroText 
+    tagline="Build Something Real" 
+    title="Draivra Discovery Program — Student Expression of Interest" 
+  />
+
+  <!-- Application Form with Formspree ******* -->
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <div class="rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8">
+      <div class="mb-8">
+        <p class="text-gray-600 dark:text-gray-400 mb-4">
+          This form takes less than 3 minutes to fill. There are no right or wrong answers. We are simply looking for curious minds who want to build something real.
+        </p>
+        <p class="text-gray-600 dark:text-gray-400">
+          <strong>Selected students will receive direct, practical building support — not just mentorship. No fees. No prior experience required.</strong>
+        </p>
+      </div>
+
+      <div data-fs-success class="hidden bg-green-100 text-green-800 p-4 rounded mb-4">
+        <p class="font-bold">Thank you for your application!</p>
+        <p>We've received your expression of interest and will review your response carefully. Selected students will be contacted on WhatsApp within 5-7 business days.</p>
+      </div>
+      <div data-fs-error class="hidden bg-red-100 text-red-800 p-4 rounded mb-4"></div>
+
+      <form action="https://formspree.io/f/xvzjkjbb" method="POST">
+        <!-- Section 1: About You -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Section 1 — About You</h2>
+
+          <!-- Question 1: Full Name -->
+          <div class="mb-6">
+            <label for="fullname" class="block text-sm font-medium mb-2">
+              Question 1: Your full name <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              required
+              placeholder="Enter your full name"
+              class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            />
+            <span data-fs-error="fullname" class="text-red-500 text-sm mt-1 block"></span>
+          </div>
+
+          <!-- Question 2: College/School -->
+          <div class="mb-6">
+            <label for="college" class="block text-sm font-medium mb-2">
+              Question 2: Your college / school name and course <span class="text-red-500">*</span>
+            </label>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">e.g. MIT World Peace University — B.Tech Computer Engineering, Year 2</p>
+            <input
+              type="text"
+              id="college"
+              name="college"
+              required
+              placeholder="College name and course"
+              class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            />
+            <span data-fs-error="college" class="text-red-500 text-sm mt-1 block"></span>
+          </div>
+
+          <!-- Question 3: WhatsApp Number -->
+          <div class="mb-6">
+            <label for="whatsapp" class="block text-sm font-medium mb-2">
+              Question 3: Your WhatsApp number <span class="text-red-500">*</span>
+            </label>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">We will only use this to inform selected students. Nothing else.</p>
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              required
+              placeholder="+91 XXXXX XXXXX"
+              class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            />
+            <span data-fs-error="whatsapp" class="text-red-500 text-sm mt-1 block"></span>
+          </div>
+        </div>
+
+        <!-- Section 2: Your Idea or Problem -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Section 2 — Your Idea or Problem</h2>
+
+          <!-- Question 4: Problem Description (Most Important) -->
+          <div class="mb-6">
+            <label for="problem" class="block text-sm font-medium mb-2">
+              Question 4 — Most important <span class="text-red-500">*</span>
+            </label>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Have you noticed a problem around you that nobody seems to be solving? It can be small or big. In your college, your city, your daily life — anywhere. Describe the problem in your own words.</p>
+            <textarea
+              id="problem"
+              name="problem"
+              required
+              rows="4"
+              placeholder="Describe the problem you've noticed..."
+              class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            ></textarea>
+            <span data-fs-error="problem" class="text-red-500 text-sm mt-1 block"></span>
+          </div>
+
+          <!-- Question 5: Idea or Solution -->
+          <div class="mb-6">
+            <label for="idea" class="block text-sm font-medium mb-2">
+              Question 5: Do you have an idea or solution in mind for this problem?
+            </label>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Even a rough thought counts. You don't need a complete plan.</p>
+            <textarea
+              id="idea"
+              name="idea"
+              rows="4"
+              placeholder="Share your idea, even if it's incomplete..."
+              class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            ></textarea>
+          </div>
+
+          <!-- Question 6: What's Stopping You -->
+          <div class="mb-6">
+            <label class="block text-sm font-medium mb-3">
+              Question 6: What is stopping you from building this idea right now? <span class="text-red-500">*</span>
+            </label>
+            <div class="space-y-3">
+              <label class="flex items-start cursor-pointer">
+                <input type="checkbox" name="barriers" value="no_idea_where_to_start" class="mt-1 mr-3" />
+                <span class="text-sm text-gray-700 dark:text-gray-300">I don't know where to start</span>
+              </label>
+              <label class="flex items-start cursor-pointer">
+                <input type="checkbox" name="barriers" value="no_technical_skills" class="mt-1 mr-3" />
+                <span class="text-sm text-gray-700 dark:text-gray-300">I don't have the technical skills</span>
+              </label>
+              <label class="flex items-start cursor-pointer">
+                <input type="checkbox" name="barriers" value="no_team_support" class="mt-1 mr-3" />
+                <span class="text-sm text-gray-700 dark:text-gray-300">I don't have a team or support</span>
+              </label>
+              <label class="flex items-start cursor-pointer">
+                <input type="checkbox" name="barriers" value="unsure_about_idea" class="mt-1 mr-3" />
+                <span class="text-sm text-gray-700 dark:text-gray-300">I'm not sure if the idea is good enough</span>
+              </label>
+              <label class="flex items-start cursor-pointer">
+                <input type="checkbox" name="barriers" value="no_resources_funding" class="mt-1 mr-3" />
+                <span class="text-sm text-gray-700 dark:text-gray-300">I have no resources or funding</span>
+              </label>
+              <label class="flex items-start cursor-pointer">
+                <input type="checkbox" name="barriers" value="all_of_above" class="mt-1 mr-3" />
+                <span class="text-sm text-gray-700 dark:text-gray-300">All of the above</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 7: Commitment -->
+          <div class="mb-6">
+            <label class="block text-sm font-medium mb-3">
+              Question 7: If someone worked with you practically — step by step — would you commit to building this? <span class="text-red-500">*</span>
+            </label>
+            <div class="space-y-3">
+              <label class="flex items-center cursor-pointer">
+                <input type="radio" name="commitment" value="absolutely_ready" required class="mr-3" />
+                <span class="text-sm text-gray-700 dark:text-gray-300">Yes, absolutely — I'm ready to start</span>
+              </label>
+              <label class="flex items-center cursor-pointer">
+                <input type="radio" name="commitment" value="need_to_understand" required class="mr-3" />
+                <span class="text-sm text-gray-700 dark:text-gray-300">Yes, but I need to understand the process first</span>
+              </label>
+              <label class="flex items-center cursor-pointer">
+                <input type="radio" name="commitment" value="not_sure_yet" required class="mr-3" />
+                <span class="text-sm text-gray-700 dark:text-gray-300">I'm not sure yet</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 8: Additional Information (Optional) -->
+          <div class="mb-6">
+            <label for="additional" class="block text-sm font-medium mb-2">
+              Question 8 — Optional: Is there anything else you'd like us to know about you or your idea?
+            </label>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Anything at all — your background, motivation, or a dream you haven't shared yet...</p>
+            <textarea
+              id="additional"
+              name="additional"
+              rows="4"
+              placeholder="Share anything else you'd like us to know..."
+              class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Disclaimer & Submit -->
+        <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
+          <div class="mt-3 flex items-start mb-6">
+            <input 
+              id="disclaimer" 
+              name="disclaimer" 
+              type="checkbox" 
+              required 
+              class="mt-1 cursor-pointer"
+            />
+            <label for="disclaimer" class="cursor-pointer select-none text-sm text-gray-600 dark:text-gray-400 ml-3">
+              By submitting this form, you consent to us contacting you on WhatsApp with updates about this program and future opportunities from Radynox-Draivra.
+            </label>
+          </div>
+
+          <div class="mt-10">
+            <button
+              type="submit"
+              data-fs-submit-btn
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition"
+            >
+              Submit Your Application
+            </button>
+          </div>
+
+          <div class="mt-3 text-center">
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              We review all applications within 5-7 business days and will reach out to promising candidates.
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Discovery Program Form uses Formspree standard form submission ******* -->
+</Layout>
