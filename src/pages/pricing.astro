@@ -8,7 +8,8 @@ import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing',
+  title: 'Pricing for Founders | Radynox-Draivra',
+  description: 'Founder execution coaching plans: from strategy sessions to ongoing operations support.',
 };
 ---
 
@@ -17,93 +18,96 @@ const metadata = {
 
   <HeroText
     tagline="Pricing"
-    title="Support plans for early-stage teams and curious builders"
-    subtitle="Choose an engagement that gives you practical options and clearer next steps."
+    title="Founder execution coaching and operations support"
+    subtitle="Flexible engagement plans that match your founder stage and growth goals."
   />
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
-    title="Support plans"
-    subtitle="Flexible packages for access, guidance, and practical help."
+    title="Engagement models"
+    subtitle="Choose the level of founder execution support that fits your stage."
     prices={[
       {
-        title: 'Start',
-        subtitle: 'Best for solo builders',
-        price: 499,
-        period: 'per month',
+        title: 'Strategy Session',
+        subtitle: 'For founders evaluating systems',
+        price: 2500,
+        period: 'per session',
         items: [
           {
-            description: 'Discovery conversation',
+            description: 'Founder challenge assessment',
           },
           {
-            description: 'Early-stage guidance hours',
+            description: 'Operations audit (1-2 areas)',
           },
           {
-            description: 'Basic pathway mapping',
+            description: 'Strategic recommendations',
           },
           {
-            description: 'Email follow-up',
+            description: 'Next-step roadmap',
           },
         ],
         callToAction: {
           target: '_self',
-          text: 'Contact us',
+          text: 'Schedule session',
           href: '/contact',
         },
       },
       {
-        title: 'Grow',
-        subtitle: 'Ideal for early-stage teams',
-        price: 1299,
+        title: 'Systems Build',
+        subtitle: 'For founders ready to implement',
+        price: 5000,
         period: 'per month',
         items: [
           {
-            description: 'Dedicated support hours',
+            description: 'Operational systems design',
           },
           {
-            description: 'Systems and workflow setup',
+            description: 'Process documentation',
           },
           {
-            description: 'Project coordination',
+            description: 'Team training and rollout',
           },
           {
-            description: 'Bi-weekly check-ins',
+            description: 'Weekly implementation calls',
           },
           {
-            description: 'Priority response',
+            description: 'Iteration and refinement',
           },
         ],
         callToAction: {
           target: '_self',
-          text: 'Contact us',
+          text: 'Get started',
           href: '/contact',
         },
         hasRibbon: true,
         ribbonTitle: 'most popular',
       },
       {
-        title: 'Partner',
-        subtitle: 'For builders seeking deeper alignment',
-        price: 2499,
+        title: 'Ongoing Operations',
+        subtitle: 'For founders at scale',
+        price: 10000,
         period: 'per month',
         items: [
           {
-            description: 'Extended support hours',
+            description: 'Dedicated operations advisor',
           },
           {
-            description: 'Ongoing systems guidance',
+            description: 'Ongoing systems optimization',
           },
           {
-            description: 'Project delivery support',
+            description: 'Strategic financial planning',
           },
           {
-            description: 'Connection strategy and next-step guidance',
+            description: 'Bi-weekly strategy calls',
+          },
+          {
+            description: 'Team development and coaching',
           },
         ],
         callToAction: {
           target: '_self',
-          text: 'Contact us',
+          text: 'Schedule consultation',
           href: '/contact',
         },
       },
@@ -113,39 +117,39 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Why these plans matter"
-    subtitle="Pick a plan that gives you practical support, clear options, and affordable entry."
+    title="Why choose Radynox-Draivra"
+    subtitle="Founder-focused engagement models that drive real operational change."
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from plans designed to match different budgets and early-stage needs.',
-        icon: 'tabler:stairs',
+        title: 'Custom engagement',
+        description: 'Plans tailored to your founder stage, from strategy to scaling operations.',
+        icon: 'tabler:adjustments',
       },
       {
-        title: 'Transparent Pricing',
-        description: 'Clear pricing details for each plan, with no hidden costs.',
-        icon: 'tabler:flip-vertical',
+        title: 'Transparent pricing',
+        description: 'Clear costs with no hidden fees. You know exactly what you\'re investing.',
+        icon: 'tabler:receipt',
       },
       {
-        title: 'Accessible onboarding',
-        description: 'We help you start with a practical, transparent entry point.',
-        icon: 'tabler:accessible',
+        title: 'Execution focus',
+        description: 'We measure success by your operational improvements and founder bandwidth gained.',
+        icon: 'tabler:target',
       },
       {
-        title: 'Plan support',
-        description: 'Select a level of support that fits your current focus and stage.',
-        icon: 'tabler:chevrons-up',
+        title: 'Scalable approach',
+        description: 'Start with a session, scale to ongoing partnership as your operations evolve.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'Flexible path',
-        description: 'Move between plans as your needs evolve and your next steps become clearer.',
-        icon: 'tabler:repeat',
+        title: 'Proven methodologies',
+        description: 'Systems and frameworks that have helped 500+ founders build sustainable operations.',
+        icon: 'tabler:certificate',
       },
       {
-        title: 'Support clarity',
-        description: 'Questions answered through email, chat, or phone with simple guidance.',
-        icon: 'tabler:headset',
+        title: 'Founder accountability',
+        description: 'Regular check-ins, metrics tracking, and progress reviews to ensure real outcomes.',
+        icon: 'tabler:clipboard-list',
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
@@ -154,42 +158,42 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="How it works"
-    tagline="From discovery to direction"
+    title="The engagement process"
+    tagline="From discovery to scaling"
     isReversed={true}
     items={[
       {
-        title: 'Explore your stage',
-        icon: 'tabler:search',
+        title: 'Founder assessment',
+        icon: 'tabler:clipboard-check',
       },
       {
-        title: 'Select a plan',
-        icon: 'tabler:list-check',
+        title: 'Challenge identification',
+        icon: 'tabler:alert-circle',
       },
       {
-        title: 'Talk with our team',
-        icon: 'tabler:message-circle',
+        title: 'Systems design',
+        icon: 'tabler:layout-grid',
       },
       {
-        title: 'Confirm your next step',
-        icon: 'tabler:circle-check',
+        title: 'Implementation roadmap',
+        icon: 'tabler:map-pin',
       },
       {
-        title: 'Begin practical guidance',
-        icon: 'tabler:rocket',
+        title: 'Team training',
+        icon: 'tabler:users',
       },
       {
-        title: 'Review progress',
-        icon: 'tabler:chart-bar',
+        title: 'Iterate and optimize',
+        icon: 'tabler:adjustments',
       },
       {
-        title: 'Keep moving forward',
-        icon: 'tabler:repeat',
+        title: 'Scale operations',
+        icon: 'tabler:trending-up',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Founder execution process',
     }}
   />
 
@@ -197,28 +201,28 @@ const metadata = {
 
   <FAQs
     title="Pricing FAQs"
-    subtitle="Answering the most common questions about how our support plans work."
+    subtitle="Common questions about our founder engagement models."
     columns={1}
     items={[
       {
-        title: 'Do the plans include support?',
-        description: 'Yes, each plan includes access to our team for questions and guidance about your next step.',
+        title: 'What\'s included in each engagement model?',
+        description: 'Strategy Sessions include audit and recommendations. Systems Build includes design, documentation, training, and weekly calls. Ongoing Operations includes dedicated advisor, optimization, financial planning, and team coaching.',
       },
       {
-        title: 'Is there a trial period?',
-        description: "We don't offer trial periods, but we can start with a conversation to see what fits your needs.",
+        title: 'Can I start with a Strategy Session?',
+        description: 'Yes, we recommend starting with a session to assess your situation and determine the right approach. You can then move to Systems Build or Ongoing Operations.',
       },
       {
-        title: 'Can I switch plans?',
-        description: 'Yes, you can upgrade or change plans as your needs evolve over time.',
+        title: 'Is the pricing fixed or can it be customized?',
+        description: 'Our standard pricing applies to most engagements. For unique situations or multi-month commitments, we can discuss customized pricing.',
       },
       {
-        title: 'What payment methods are accepted?',
-        description: 'We accept major credit cards and secure payment methods for convenience and safety.',
+        title: 'What if I need to pause or change my engagement?',
+        description: 'We work with founders on flexible terms. Let us know your situation and we\'ll find a solution that works.',
       },
       {
-        title: 'Are there any hidden fees?',
-        description: 'No, the listed cost covers the support deliverables for each plan, with no hidden fees.',
+        title: 'Do you offer discounts for annual commitments?',
+        description: 'Yes, we offer 10% discounts for annual commitments on Systems Build and Ongoing Operations engagements.',
       },
     ]}
   />
@@ -226,12 +230,12 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to choose the right plan?"
-    subtitle="Reach out and we’ll help you find the plan that fits your stage."
+    title="Ready to scale your operations?"
+    subtitle="Schedule a Strategy Session to assess your founder execution challenges."
     actions={[
       {
         variant: 'primary',
-        text: 'Contact us',
+        text: 'Schedule consultation',
         href: '/contact',
       },
     ]}
