@@ -4,38 +4,39 @@ import HeroText from '~/components/widgets/HeroText.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Social Impact',
+  title: 'Founder Impact | Radynox-Draivra',
+  description: 'How we measure success: founder outcomes, business sustainability, and market impact.',
 };
 ---
 
 <Layout metadata={metadata}>
   <HeroText
-    tagline="Social Impact"
-    title="Support that strengthens founders and communities"
-    subtitle="Radynox-Draivra invests in meaningful outcomes, helping startups build products that also make a positive impact."
-    callToAction={{ text: 'Contact us', href: '/contact' }}
+    tagline="Founder Impact"
+    title="Measure success through founder outcomes and business sustainability"
+    subtitle="Radynox-Draivra focuses on helping founders build sustainable, scalable businesses with healthy operations and sustainable growth."
+    callToAction={{ text: 'Learn more', href: '/contact' }}
   />
 
   <Features2
-    title="How we measure impact"
+    title="How we define success"
     columns={3}
     items={[
       {
-        title: 'Foundational support',
+        title: 'Founder wellbeing',
         description:
-          'We enable mission-driven founders to ship faster with practical delivery and operational systems.',
-        icon: 'tabler:building-warehouse',
+          'We measure impact by founder bandwidth gained, burnout reduced, and focus reclaimed for strategy and growth.',
+        icon: 'tabler:heart',
       },
       {
-        title: 'Community focus',
+        title: 'Business sustainability',
         description:
-          'Our work reflects a commitment to founders who are solving real problems, not just chasing metrics.',
-        icon: 'tabler:star',
+          'Our work creates durable operations, healthy team structures, and financially sound businesses built to last.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'Long-term value',
-        description: 'We seek opportunities where our execution support creates durable business and social momentum.',
-        icon: 'tabler:seedling',
+        title: 'Scalable growth',
+        description: 'We succeed when founders can scale from solo execution to organized operations without crisis.',
+        icon: 'tabler:rocket',
       },
     ]}
   />

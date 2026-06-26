@@ -4,38 +4,39 @@ import HeroText from '~/components/widgets/HeroText.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Careers',
+  title: 'Careers at Radynox-Draivra | Join Our Team',
+  description: 'Join our team and help founders build execution systems, operational clarity, and sustainable growth.',
 };
 ---
 
 <Layout metadata={metadata}>
   <HeroText
     tagline="Careers at Radynox-Draivra"
-    title="Build with founders, not around them"
-    subtitle="Join a small, execution-driven team that supports founders with systems, delivery, and operational momentum."
-    callToAction={{ text: 'Contact us', href: '/contact' }}
+    title="Help founders build execution systems and operational clarity"
+    subtitle="Join a mission-driven team focused on helping founders scale beyond founder-dependent operations through systems, strategy, and sustainable growth."
+    callToAction={{ text: 'View opportunities', href: '/contact' }}
   />
 
   <Features2
-    title="Why join us"
-    subtitle="We hire people who care about founder success, practical delivery, and sustainable growth."
+    title="What makes Radynox-Draivra special"
+    subtitle="We hire people who are passionate about founder success, systems design, and operational excellence."
     columns={3}
     items={[
       {
-        title: 'Founder empathy',
-        description: 'Work with a team that understands founder urgency and builds practical systems, not busywork.',
-        icon: 'tabler:heart',
+        title: 'Founder-centric mission',
+        description: 'Work with a team that deeply understands founder challenges and builds systems, not templates.',
+        icon: 'tabler:target',
       },
       {
-        title: 'Hands-on delivery',
+        title: 'Impact and delivery',
         description:
-          'Deliver real outcomes like launch support, marketing operations, and product systems for early-stage ventures.',
-        icon: 'tabler:rocket',
+          'Directly support 500+ founders with systems design, execution coaching, financial clarity, and team operations.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'Growth mindset',
-        description: 'Help founders grow faster while refining processes, workflows, and repeatable operating models.',
-        icon: 'tabler:trending-up',
+        title: 'Growth and learning',
+        description: 'Develop expertise in founder execution, scaling systems, and operational strategy across diverse industries.',
+        icon: 'tabler:bulb',
       },
     ]}
   />

@@ -5,74 +5,75 @@ import Features2 from '~/components/widgets/Features2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Join our mission',
+  title: 'Join our mission | Radynox-Draivra',
+  description: 'Join the mission to help founders build execution systems, operational clarity, and sustainable growth.',
 };
 ---
 
 <Layout metadata={metadata}>
   <Hero
     tagline="Join our mission"
-    title="Help make access and clarity real for curious builders"
-    subtitle="Partner with us to connect people to practical support, honest pathways, and the communities they need next."
+    title="Help founders move from chaos to operational clarity"
+    subtitle="Partner with us to provide execution systems, operational coaching, and strategic guidance that helps founders scale without founder burnout."
     actions={[
-      { variant: 'primary', text: 'Contact us', href: '/contact' },
-      { text: 'Visit about page', href: '/about' },
+      { variant: 'primary', text: 'Get involved', href: '/contact' },
+      { text: 'Learn about our approach', href: '/about' },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'People collaborating in a meeting',
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Founder execution systems and operations',
     }}
   />
 
   <Features2
-    title="Why join the mission"
-    subtitle="A practical way to support people who need a fairer route into the ecosystem."
-    tagline="What this mission stands for"
+    title="Our mission foundation"
+    subtitle="What we believe about founder execution and sustainable growth."
+    tagline="How to help"
     columns={3}
     items={[
       {
-        title: 'Make access easier',
-        description: 'Help people find pathways and resources before they need traction, funding, or a polished plan.',
-        icon: 'tabler:map-search',
+        title: 'Systems over heroics',
+        description: 'Help founders escape founder-dependent chaos by building sustainable systems and scalable processes.',
+        icon: 'tabler:layout-grid',
       },
       {
-        title: 'Share honest next steps',
+        title: 'Execution focus',
         description:
-          'Encourage a mindset that values clarity and practical progress over hype and exaggerated promises.',
-        icon: 'tabler:compass',
+          'Emphasize practical implementation, operational clarity, and measurable outcomes over theory and consulting speak.',
+        icon: 'tabler:target',
       },
       {
-        title: 'Build community',
+        title: 'Founder partnership',
         description:
-          'Create more room for students, curious builders, and small businesses to connect with useful networks.',
-        icon: 'tabler:users-group',
+          'Support founders as genuine partners committed to sustainable growth, not consultants pushing one-size-fits-all solutions.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Keep support grounded',
-        description: 'Focus on the real support people need now, not the labels they do or do not carry.',
-        icon: 'tabler:heart-handshake',
+        title: 'Operational transparency',
+        description: 'Build clear accountability, documented processes, and team alignment that survives founder transitions.',
+        icon: 'tabler:clipboard-list',
       },
       {
-        title: 'Create affordable entry points',
-        description: 'Help make early-stage resources and practical guidance more accessible and easy to start with.',
-        icon: 'tabler:coin',
+        title: 'Sustainable scaling',
+        description: 'Help founders scale from startup chaos to organized operations without sacrificing founder wellbeing.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'Stay humble and honest',
+        title: 'Founder breathing room',
         description:
-          'Champion work that is clear about what it can offer rather than promising to replace existing mentors or investors.',
+          'Champion the idea that founders deserve operational systems that free them to focus on strategy and growth.',
         icon: 'tabler:heart',
       },
     ]}
   />
 
   <CallToAction
-    title="Ready to join the mission?"
-    subtitle="Get in touch and we’ll share how you can help people step into the ecosystem with confidence."
+    title="Ready to join the founder execution movement?"
+    subtitle="Let's work together to help founders build sustainable, scalable operations."
     actions={[
       {
         variant: 'primary',
-        text: 'Contact us',
+        text: 'Get involved',
         href: '/contact',
       },
     ]}
