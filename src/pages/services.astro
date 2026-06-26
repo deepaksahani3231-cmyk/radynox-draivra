@@ -7,7 +7,8 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'Services for Founders | Radynox-Draivra',
+  description: 'Founder execution systems, operations coaching, financial clarity, and team building services.',
 };
 ---
 
@@ -15,54 +16,54 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Services"
-    title="Practical support for early-stage teams and curious builders"
-    subtitle="Guidance and connections for people navigating early-stage projects and small businesses."
-    actions={[{ variant: 'primary', target: '_self', text: 'Contact us', href: '/contact' }]}
+    tagline="Our Services"
+    title="Operational systems and founder execution coaching"
+    subtitle="We design systems that scale, train your team, and help you reclaim focus from day-to-day firefighting."
+    actions={[{ variant: 'primary', target: '_self', text: 'Schedule a consultation', href: '/contact' }]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Support community image',
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Founder execution and team operations',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="What we offer"
-    subtitle="Support options for people who need clarity, access, and practical next steps."
+    title="What we provide"
+    subtitle="Founder-focused services designed for execution, scale, and sustainable growth."
     columns={3}
     items={[
       {
-        title: 'Ecosystem navigation',
+        title: 'Execution systems design',
         description:
-          'We help you understand the communities, programs, and resources that may be useful for your current stage.',
+          'We design workflows for hiring, financial management, decision-making, and team communication tailored to your stage.',
+        icon: 'tabler:layout-grid',
+      },
+      {
+        title: 'Founder operations coaching',
+        description: 'One-on-one guidance to help you delegate, build accountability, and focus on strategy instead of execution.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Financial clarity workshops',
+        description:
+          'Understand your unit economics, runway, cash flow, and build financial discipline into your operations.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Team building and scaling',
+        description: 'Navigate hiring, culture, and organizational structure as you grow from founder solo to scaled team.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Process documentation',
+        description: 'Create playbooks, decision frameworks, and knowledge systems that survive founder handoff.',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Strategy and growth planning',
+        description: 'Quarterly planning, market strategy, and execution roadmaps that actually get executed.',
         icon: 'tabler:compass',
-      },
-      {
-        title: 'Practical delivery',
-        description: 'Support for digital presence, workflows, and small projects that keep your work moving forward.',
-        icon: 'tabler:devices',
-      },
-      {
-        title: 'Small-team systems',
-        description:
-          'We help create processes and tools that fit your resources and bring more consistency to daily work.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'Opportunity discovery',
-        description: 'We share relevant programs, networks, and pathways without overpromising what comes next.',
-        icon: 'tabler:search',
-      },
-      {
-        title: 'Project-based help',
-        description: 'Deliver defined initiatives like launch support, system setup, and digital product coordination.',
-        icon: 'tabler:briefcase',
-      },
-      {
-        title: 'Community connection',
-        description: 'We connect people with networks and resources that can grow alongside their journey.',
-        icon: 'tabler:users-group',
       },
     ]}
   />
@@ -73,34 +74,34 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'Practical support',
-        description: 'We focus on realistic work that helps people move forward without adding unnecessary complexity.',
-        icon: 'tabler:tools',
-      },
-      {
-        title: 'Flexible engagement',
-        description: 'Choose from conversation-based guidance, project help, or longer-term connections.',
+        title: 'Systems that stick',
+        description: 'We design operational systems that fit your company culture and actually get used by your team.',
         icon: 'tabler:layout-grid',
       },
       {
-        title: 'Clear alignment',
-        description: 'Support that is transparent and aligned with your current goals, not with broad promises.',
+        title: 'Founder-led implementation',
+        description: 'You stay in control. We guide, coach, and support your team through adoption and adaptation.',
         icon: 'tabler:user',
       },
       {
-        title: 'Sustainable systems',
-        description: 'We build processes and documentation that make daily work more predictable over time.',
+        title: 'Financial rigor',
+        description: 'Build a financial discipline culture from day one with clear metrics, dashboards, and accountability.',
         icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Scalable processes',
+        description: 'Processes and documentation that make it possible to add team members without losing quality.',
+        icon: 'tabler:trending-up',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Support services image',
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Founder operations and systems',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Support that respects your stage
+        Systems built for founder success
       </h3>
     </Fragment>
   </Content>
@@ -111,34 +112,34 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Time back for builders',
-        description: 'We help people reclaim focus by reducing day-to-day friction and unclear next steps.',
-        icon: 'tabler:clock',
+        title: 'Focus on strategy',
+        description: 'Clear systems free you from operational chaos and give you time to focus on vision and growth.',
+        icon: 'tabler:target',
       },
       {
-        title: 'Reduced stress',
-        description: 'Clear guidance and practical resources reduce confusion and prevent overload.',
-        icon: 'tabler:school',
+        title: 'Team alignment',
+        description: 'Documented systems create clarity and accountability across your entire team.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Stronger operations',
-        description: 'We build consistent workflows that help small teams move more predictably.',
-        icon: 'tabler:coin',
+        title: 'Scalable growth',
+        description: 'Add team members confidently because systems, not founders, are the foundation of your operation.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'Practical connection',
-        description: 'Our support is meant to be useful and accessible, not exclusive or overpromised.',
-        icon: 'tabler:file-download',
+        title: 'Founder breathing room',
+        description: 'Reduce founder burnout by building businesses that don\'t depend on your constant presence.',
+        icon: 'tabler:heart',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits image',
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Founder success outcomes',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Support built around your next step
+        Outcomes we drive
       </h3>
     </Fragment>
   </Content>
@@ -146,30 +147,30 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Builder feedback"
+    title="Founder outcomes"
     testimonials={[
       {
-        testimonial: `Radynox-Draivra helped us launch our support systems quickly and reliably. The team’s practical focus was exactly what we needed.`,
-        name: 'Deepak Sahani',
-        job: 'Early-stage builder',
+        testimonial: `Radynox-Draivra transformed how we operate. We went from founder-dependent chaos to clear systems. Our team knows what to do without asking me.`,
+        name: 'Sarah Chen',
+        job: 'Founder & CEO, SaaS startup',
         image: {
           src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
           alt: 'Builder testimonial image',
         },
       },
       {
-        testimonial: `Their practical support allowed us to focus on product and customers. They were responsive, structured, and clear.`,
-        name: 'Priya Sharma',
-        job: 'Small team lead',
+        testimonial: `The financial clarity we built with them became our foundation for investor conversations. We could finally speak with confidence about our unit economics.`,
+        name: 'Marcus Johnson',
+        job: 'Co-Founder, E-commerce brand',
         image: {
           src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
           alt: 'Builder testimonial image',
         },
       },
       {
-        testimonial: `Working with Radynox-Draivra cleared roadblocks and gave us the bandwidth to keep moving.`,
-        name: 'Arjun Verma',
-        job: 'Small business owner',
+        testimonial: `I finally got my time back. Instead of firefighting every day, we have systems. Our first three hires made real impact because they had clarity on their roles.`,
+        name: 'Priya Sharma',
+        job: 'Founder, B2B SaaS platform',
         image: {
           src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
           alt: 'Builder testimonial image',
@@ -178,7 +179,7 @@ const metadata = {
     ]}
     callToAction={{
       target: '_self',
-      text: 'Contact us',
+      text: 'Schedule a consultation',
       href: '/contact',
       icon: 'tabler:chevron-right',
     }}
@@ -190,11 +191,11 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Contact us',
+        text: 'Schedule a consultation',
         href: '/contact',
       },
     ]}
-    title="Ready to explore practical support?"
-    subtitle="Reach out and we’ll help you find the next step that fits your stage."
+    title="Ready to transform your operations?"
+    subtitle="Let's discuss how we can help you build systems that scale."
   />
 </Layout>
