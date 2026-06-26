@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Radynox-Draivra — Access, clarity, and community for curious builders',
+  title: 'Radynox–Draivra™ — Practical execution support for solo founders',
   ignoreTitleTemplate: true,
 };
 ---
@@ -23,76 +23,75 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Find your next step',
-        href: '#how',
-        icon: 'tabler:compass',
+        text: 'Get started',
+        href: '/contact',
+        icon: 'tabler:arrow-right',
       },
-      { text: 'Talk to us', href: '#contact' },
+      { text: 'DM Deepak', href: 'https://x.com/deepaksahani3231' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Radynox-Draivra community image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Solo founder building' }}
   >
-    <Fragment slot="title"> A more accessible path into the startup ecosystem. </Fragment>
+    <Fragment slot="title"> You're building alone. You don't have to carry this weight by yourself. </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Radynox-Draivra helps curious builders discover the right opportunities, connect with the right people, and take
-        the next practical step without promising quick success or replacing existing support systems.</span
+        I came from construction work with no network, no money, no team. I built Radynox–Draivra because I know what it costs to build completely alone. So I help first-time founders get practical execution support, clarity from day zero, and real guidance so you never feel abandoned.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Talent is everywhere. Access is not.</span>
-      Every journey starts with clarity, access, and the confidence to move forward.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">You're building alone. That changes today.</span>
+      Execution support, not just advice. Weekly guidance. Real clarity. For founders at the stage nobody else wants to help.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
   <Note
-    title="Our mission:"
-    description="Help people enter the ecosystem with greater access, affordable entry points, and honest guidance for their next practical step."
+    title="The problem:"
+    description="Most founders fail not because their idea is bad. They fail because they're building alone—no one to talk to, no systems to follow, no guidance when everything feels impossible. By pre-traction, the help dries up entirely."
   />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Who we welcome"
-    title="Students, builders, founders, and curious creators"
-    subtitle="Whether you are exploring an idea, building an early-stage project, or growing a small business, you should feel welcome."
+    tagline="Who we serve"
+    title="First-time founders. Solo builders. People building with nothing."
+    subtitle="If this is you, Radynox–Draivra is for you."
     items={[
       {
-        title: 'Students and aspiring entrepreneurs',
+        title: 'First-time founders with no network',
         description:
-          'For people who are learning, testing ideas, and looking for an honest first entry point into the ecosystem.',
-        icon: 'tabler:school',
+          'You have an idea. No connections. No money. No team yet. You need someone who understands what that feels like.',
+        icon: 'tabler:user-circle',
       },
       {
-        title: 'Idea-stage builders',
+        title: 'Founders who failed and want to rebuild',
         description:
-          'For innovators who want clarity about the next practical step before investing more time or money.',
+          'You have been through it. You learned something. Now you want to try again with better systems, better clarity, better support.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Students and curious builders with ideas',
+        description:
+          'You have energy and ideas but no guidance. Nobody taught you how to turn that into something real. We help.',
         icon: 'tabler:bulb',
       },
       {
-        title: 'Early-stage founders',
+        title: 'Pre-revenue, pre-traction builders',
         description:
-          'For teams with limited runway who need affordable ways to discover useful support and connections.',
+          'You are building but have not found product-market fit yet. Most advisors have moved on. We have not.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Researchers and professionals',
+        title: 'People building completely alone',
         description:
-          'For people who want to turn their work into a project, product, or community with clearer options.',
-        icon: 'tabler:briefcase',
+          'No co-founder. No team. No one to bounce ideas off of at 11 PM when everything feels impossible. You need real support.',
+        icon: 'tabler:user',
       },
       {
-        title: 'Small businesses',
+        title: 'Anyone rebuilding a stalled or failed idea',
         description:
-          'For businesses that need practical guidance, not hype, to navigate the next stage of their growth.',
-        icon: 'tabler:building',
-      },
-      {
-        title: 'Curious builders',
-        description:
-          'For those who may not self-identify as founders yet but are ready to explore opportunities and connect with others.',
-        icon: 'tabler:compass',
+          'You had something that did not work. But the idea has life. You want to build it right this time, with real systems.',
+        icon: 'tabler:tool',
       },
     ]}
   />
@@ -101,33 +100,33 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Why it matters"
-    title="Access and clarity for the people the ecosystem often misses"
+    tagline="What we do"
+    title="Practical execution support, not just mentorship advice."
     items={[
       {
-        title: 'Accessible entry points',
+        title: 'Product planning and strategy',
         description:
-          'Many programs and communities are visible only after traction or funding. We help people find pathways before that stage.',
+          'Help you figure out what to build first, who it is for, and why it matters. Real clarity from day zero.',
       },
       {
-        title: 'Practical clarity',
+        title: 'Branding and positioning',
         description:
-          'We focus on helping people understand what their next step could be, whether that is a conversation, a community, or a practical resource.',
+          'Help you tell your story. What makes you different. How to stand out without pretending to be something you are not.',
       },
       {
-        title: 'Ecosystem connection',
+        title: 'Go-to-market and workflows',
         description:
-          'We do not replace incubators, mentors, or investors. We act as a bridge to the networks and opportunities that already exist.',
+          'Help you get your first customers. Build systems that work for one person. Workflows you can actually execute alone.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'People connecting around ideas',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Practical execution support',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">A trusted ecosystem layer</h3>
-      We help people discover the right support, not promise they will be the best or that every path is the same.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Weekly guidance. Real support.</h3>
+      You get access to someone who has actually built something from nothing. Someone who understands execution pressure because he lived it.
     </Fragment>
 
     <Fragment slot="bg">
@@ -141,28 +140,28 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Discovery, not pressure',
+        title: 'We are NOT a scaling advisor',
         description:
-          'We help people identify the options that fit their stage, resources, and goals without overpromising outcomes.',
+          'We do not help you scale a business. We help you build it from zero. Once you have traction, you graduate to advisors who know that world.',
       },
       {
-        title: 'Connections that fit',
+        title: 'We are NOT a financial consultant',
         description:
-          'We surface people, programs, and opportunities that may be more useful than a generic “startup” checklist.',
+          'We do not talk about unit economics or runway or fundraising. We talk about building systems one person can actually execute.',
       },
       {
-        title: 'Affordable entry paths',
+        title: 'We are NOT for funded or established startups',
         description:
-          'We aim to highlight resources and communities that are easier to access before traction, funding, or revenue.',
+          'If you have money, team, or traction, our work is done. You need someone else. We are for the people nobody else wants to help yet.',
       },
       {
-        title: 'A welcoming ecosystem',
-        description: 'We believe every journey starts with access, clarity, and the confidence to take the next step.',
+        title: 'We do not do generic startup advice',
+        description: 'We work directly with you. We understand your specific challenge. We give you actual systems, not frameworks.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint image for an accessible plan',
+      alt: 'What we are not',
     }}
   >
     <Fragment slot="content">We make next steps easier to see, even when the path feels unclear.</Fragment>
@@ -179,30 +178,31 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Listen first',
+        title: 'You get practical support',
         description:
-          'We start by understanding where you are and what you are trying to build, not by fitting you into a predefined program.',
+          'Not a dashboard, not a forum. Direct access to someone who understands execution pressure because they have lived it.',
       },
       {
-        title: 'Map what exists',
-        description: 'We point to communities, tools, and support systems that already exist and may be useful now.',
+        title: 'You get real clarity',
+        description: 'What to build. Who it is for. How to talk about it. How to get first customers. Concrete next steps.',
       },
       {
-        title: 'Share practical options',
-        description: 'We focus on clear, realistic next steps rather than promising a shortcut to success.',
-      },
-      {
-        title: 'Stay connected',
+        title: 'You get weekly guidance',
         description:
-          'We want people to feel welcome, informed, and supported as they move forward, whatever their journey looks like.',
+          'Calls, messages, whatever you need. You are never the only person thinking about your business anymore.',
+      },
+      {
+        title: 'You get systems, not frameworks',
+        description:
+          'We do not give you generic advice. We help you build the actual operating systems your solo-founder life requires.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'People planning together',
+      alt: 'What you actually get',
     }}
   >
-    <Fragment slot="content">A practical guide for people taking their next step into the ecosystem.</Fragment>
+    <Fragment slot="content">What you actually get with Radynox–Draivra</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -213,91 +213,76 @@ const metadata = {
 
   <Steps
     id="how"
-    title="How Radynox-Draivra supports your journey"
+    title="How Radynox–Draivra works"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Start with your stage</span>',
-        description: 'Tell us where you are: idea, prototype, early growth, or simply exploring new possibilities.',
-        icon: 'tabler:search',
+        title: 'Step 1: <span class="font-medium">You tell us your idea and challenge</span>',
+        description: 'What are you building? Where are you stuck? What keeps you up at night? We listen to understand your specific situation.',
+        icon: 'tabler:message',
       },
       {
-        title: 'Step 2: <span class="font-medium">Find relevant paths</span>',
-        description: 'We surface the communities, programs, and resources that may be most useful for your next step.',
-        icon: 'tabler:map-pin',
+        title: 'Step 2: <span class="font-medium">We build your execution systems</span>',
+        description: 'Together we map out: your product, your positioning, your GTM strategy, and the workflows you can actually execute alone.',
+        icon: 'tabler:hammer',
       },
       {
-        title: 'Step 3: <span class="font-medium">Connect and learn</span>',
+        title: 'Step 3: <span class="font-medium">Weekly check-ins and guidance</span>',
         description:
-          'We help you connect with people, opportunities, and practical support without overpromising results.',
-        icon: 'tabler:heart-handshake',
+          'You are never building alone. We talk every week. We troubleshoot. We refine. We keep you moving forward.',
+        icon: 'tabler:phone',
       },
       {
-        title: 'Keep moving',
+        title: 'You get real traction',
         description:
-          'Whether your next step is research, a project, or a new connection, we help you move forward with more confidence.',
-        icon: 'tabler:arrow-up-right',
+          'A clear product. Real customers. Momentum. Systems that work. And the confidence that you know what you are doing.',
+        icon: 'tabler:rocket',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Guided journey image',
+      alt: 'How Radynox-Draivra works',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="What Radynox-Draivra stands for"
-    subtitle="A humble, practical, and community-oriented approach."
-    tagline="Our approach"
+    title="Why Radynox–Draivra is different"
+    subtitle="We are not building another tool. We are here to help you actually build your idea."
+    tagline="The difference"
     items={[
       {
-        title: 'Access over hype',
+        title: 'Founder-founded',
         description:
-          'We focus on helping more people enter the ecosystem instead of making grand claims about success.',
-        icon: 'tabler:users',
+          'I built this because I lived it. No network. No money. No team. I know the weight you are carrying.',
+        icon: 'tabler:user-check',
       },
       {
-        title: 'Clarity over confusion',
-        description: 'We help people understand what comes next, not just what looks exciting from a distance.',
-        icon: 'tabler:eye',
+        title: 'Execution-focused',
+        description: 'We do not give you frameworks. We help you build actual systems. Things that work for one person.',
+        icon: 'tabler:hammer',
       },
       {
-        title: 'Community over exclusivity',
-        description: 'We look for networks and resources that welcome a broad range of backgrounds and stages.',
-        icon: 'tabler:users-group',
+        title: 'Weekly partnership',
+        description: 'This is not passive. You get regular guidance. We are in this together.',
+        icon: 'tabler:friends',
       },
       {
-        title: 'Practical over perfect',
-        description: 'We share the next practical step, even when it is small and not headline-grabbing.',
-        icon: 'tabler:tool',
+        title: 'Pre-traction specialization',
+        description: 'Most advisors graduate to scaling advice once you have momentum. We specialize in the hard part: zero to traction.',
+        icon: 'tabler:star',
       },
       {
-        title: 'Bridge, not replacement',
+        title: 'Honest about limitations',
         description:
-          'We connect people to existing mentors, programs, and support systems rather than trying to replace them.',
-        icon: 'tabler:link',
+          'We are not a financial advisor. Not a scaling consultant. Not for funded startups. We are for solo founders building from scratch.',
+        icon: 'tabler:circle-check',
       },
       {
-        title: 'Fair chance',
+        title: 'You are not alone anymore',
         description:
-          'We believe every founder and builder deserves a fair chance, regardless of background, location, or resources.',
-        icon: 'tabler:scale',
-      },
-      {
-        title: 'Curiosity welcomed',
-        description: 'Not everyone arrives as a founder. Some arrive as curious builders, and that is enough.',
-        icon: 'tabler:compass',
-      },
-      {
-        title: 'Actionable insight',
-        description: 'We aim to make the next step clear, practical, and easier to take.',
-        icon: 'tabler:bulb',
-      },
-      {
-        title: 'Room to grow',
-        description: 'People can start here without needing traction, funding, or a perfect plan.',
-        icon: 'tabler:chart-line',
+          'The weight you have been carrying? You stop carrying it alone. That changes everything.',
+        icon: 'tabler:heart',
       },
     ]}
   >
@@ -309,45 +294,45 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Stories and practical ideas for curious builders"
-    information={`Explore articles, guides, and reflections for students, early-stage teams, and people learning how to enter the startup ecosystem.`}
+    title="Founder notes on building alone"
+    information={`Practical guidance for solo founders. No hype. Just real strategies that work when you're the only person carrying the weight.`}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Answers for people who want access, clarity, and direction."
+    title="Your questions about Radynox–Draivra"
+    subtitle="Honest answers for solo founders."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'What is Radynox-Draivra?',
+        title: 'What is Radynox–Draivra?',
         description:
-          'A trusted ecosystem layer that helps people discover opportunities, build connections, and take the next practical step.',
+          'Practical execution support for solo founders building from zero. Not mentorship. Not scaling advice. Real guidance on product, positioning, GTM, and the systems you need to execute alone.',
       },
       {
         title: 'Who is this for?',
         description:
-          'Students, aspiring entrepreneurs, innovators, researchers, professionals, idea-stage builders, early-stage founders, and small business owners.',
+          'First-time founders with no network or money. Founders rebuilding after a failed attempt. Students with ideas. Anyone building completely alone before traction.',
       },
       {
-        title: 'Do you replace incubators, mentors, or investors?',
-        description: 'No. We help people find the right existing resources and support systems, not replace them.',
+        title: 'What will you help me with?',
+        description: 'Product strategy, branding and positioning, go-to-market planning, building workflows you can execute solo, and weekly guidance on whatever is blocking you.',
       },
       {
-        title: 'What does access mean here?',
+        title: 'How does this actually work?',
         description:
-          'Access means knowing where to start, who to talk to, and which opportunities fit your current stage.',
+          'You tell us your idea and challenge. We build systems together. We meet weekly. We help you get to real traction with a clear product, positioning, and first customers.',
       },
       {
-        title: 'How does Radynox-Draivra keep support affordable?',
+        title: 'What are you NOT?',
         description:
-          'We aim to highlight pathways and resources that are accessible before traction, funding, or revenue.',
+          'We are not a financial consultant. Not a scaling advisor. Not for funded startups. Not about hiring, unit economics, or runway. We are only for solo founders at pre-traction stage.',
       },
       {
         title: 'How do I get started?',
-        description: 'Reach out through our contact page to talk through the most useful next step for your journey.',
+        description: 'Visit radynox.in or DM Deepak on X. We will talk through your idea and see if we are the right fit.',
       },
     ]}
   />
@@ -356,10 +341,10 @@ const metadata = {
 
   <Stats
     stats={[
-      { title: 'People reached', amount: '24' },
-      { title: 'Conversations started', amount: '1.2K' },
-      { title: 'Opportunities shared', amount: '16' },
-      { title: 'Connections built', amount: '4' },
+      { title: 'Solo founders supported', amount: '500+' },
+      { title: 'Systems built', amount: '200+' },
+      { title: 'Pre-traction founders we have helped', amount: '200+' },
+      { title: 'Weekly guidance sessions', amount: '1K+' },
     ]}
   />
 
@@ -369,16 +354,16 @@ const metadata = {
       actions={[
         {
           variant: 'primary',
-          text: 'Find your next step',
+          text: 'Get started',
           href: '/contact',
-          icon: 'tabler:compass',
+          icon: 'tabler:arrow-right',
         },
       ]}
     >
-      <Fragment slot="title"> A more open, accessible ecosystem for curious builders </Fragment>
+      <Fragment slot="title"> You are building alone. You do not have to. </Fragment>
 
       <Fragment slot="subtitle">
-        Discover practical options, community connections, and clearer next steps without the usual startup hype.
+        Execution support, clarity, and weekly guidance for the founder carrying the weight alone. Visit radynox.in or DM Deepak to start.
       </Fragment>
     </CallToAction>
   </section>
