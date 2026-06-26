@@ -17,7 +17,8 @@ const googlePlayImg = '~/assets/images/google-play.png';
 const googlePlayDownloadLink = '/contact';
 
 const metadata = {
-  title: 'Mobile App Demo',
+  title: 'Founder Support Platform | Radynox-Draivra',
+  description: 'Access founder-focused resources, tools, and guidance to navigate growth challenges and build sustainable systems.',
 };
 ---
 
@@ -37,62 +38,61 @@ const metadata = {
   </Fragment>
 
   <Hero2
-    tagline="Mobile App Demo"
+    tagline="Founder Support Platform"
     image={{
-      src: 'https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80',
-      alt: 'Radynox-Draivra App preview',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Founder platform interface',
     }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white">Radynox-Draivra App</span>: fast, practical website delivery.
+      <span class="text-accent dark:text-white">Your support system</span> for every stage of founder growth.
     </Fragment>
 
     <Fragment slot="subtitle">
-      Discover a mobile-first experience for exploring templates, previewing designs, and taking the next step with less
-      friction.
+      Access tools, templates, frameworks, and guidance when you need it most. Whether you're building operations, scaling your team, or navigating growth—we've got practical resources ready.
     </Fragment>
 
     <div slot="actions" class="flex max-w-sm gap-4">
-      <Button variant="link" href={appStoreDownloadLink}>
-        <Image src={appStoreImg} alt="App Store" width={200} format="webp" />
+      <Button variant="link" href="/contact">
+        <Image src={appStoreImg} alt="Get Started" width={200} format="webp" />
       </Button>
-      <Button variant="link" href={googlePlayDownloadLink}>
-        <Image src={googlePlayImg} alt="Google Play" width={200} format="webp" />
+      <Button variant="link" href="/contact">
+        <Image src={googlePlayImg} alt="Learn More" width={200} format="webp" />
       </Button>
     </div>
   </Hero2>
 
   <Features3
     id="features"
-    title="How it works"
-    subtitle="A simple path to browse templates, preview results, and move toward implementation."
-    tagline="Step-by-step guide"
+    title="How to Get Started"
+    subtitle="Four simple steps to access founder resources, frameworks, and ongoing support."
+    tagline="Quick start guide"
     columns={2}
     items={[
       {
-        title: 'Download the app',
-        description: 'Open the app and start exploring professionally designed templates in seconds.',
-        icon: 'tabler:download',
-      },
-      {
-        title: 'Create your account',
-        description: 'Register quickly so you can save favorite templates and access your work across devices.',
+        title: 'Create your founder account',
+        description: 'Sign up in seconds and access your personalized dashboard with resources tailored to your stage.',
         icon: 'tabler:user-plus',
       },
       {
-        title: 'Browse templates',
-        description: 'Choose from mobile-friendly layouts and designs that match your current goals.',
+        title: 'Explore framework library',
+        description: 'Browse operational systems, hiring frameworks, financial dashboards, and execution guides.',
         icon: 'tabler:layout-grid',
       },
       {
-        title: 'Preview and customize',
-        description: 'Preview layouts, make lightweight edits, and prepare for your next implementation step.',
-        icon: 'tabler:edit',
+        title: 'Download what you need',
+        description: 'Get templates, checklists, decision frameworks, and playbooks designed for your specific challenge.',
+        icon: 'tabler:download',
+      },
+      {
+        title: 'Connect with support',
+        description: 'Schedule 1:1s, join group office hours, or access async guidance to implement systems.',
+        icon: 'tabler:phone',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1521517407911-565264e7d82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
-      alt: 'Mobile app interface',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
+      alt: 'Founder platform dashboard',
     }}
   />
 
@@ -100,33 +100,33 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'Intuitive interface',
-        description: 'A clean layout that makes it easy to browse templates and preview design options.',
-        icon: 'tabler:wand',
+        title: 'Operations frameworks',
+        description: 'Pre-built systems for hiring, financial management, sales processes, and team alignment.',
+        icon: 'tabler:layout-grid',
       },
       {
-        title: 'Easy customization',
-        description: 'Adjust colors, text, and layout choices without losing the practical focus of your project.',
-        icon: 'tabler:settings',
+        title: 'Decision templates',
+        description: 'Playbooks for the tough decisions: when to hire, how to raise, pivoting your business, and more.',
+        icon: 'tabler:clipboard-list',
       },
       {
-        title: 'Ready-to-use resources',
-        description: 'Work faster with prebuilt sections, images, and components designed to launch quickly.',
-        icon: 'tabler:template',
+        title: 'Execution guides',
+        description: 'Step-by-step instructions for implementing systems that actually work in your business context.',
+        icon: 'tabler:book',
       },
       {
-        title: 'Live previews',
-        description: 'See how the final result will look before moving into implementation.',
-        icon: 'tabler:carousel-horizontal',
+        title: 'Real-time access',
+        description: 'Get resources when you need them, not months later. All materials are immediately downloadable.',
+        icon: 'tabler:cloud-download',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80',
-      alt: 'Mobile interface design',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80',
+      alt: 'Founder resources and tools',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Core resources</h3>
     </Fragment>
   </Content>
 
@@ -134,119 +134,118 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Offline access',
-        description: 'Save templates locally so work can continue even without internet access.',
-        icon: 'tabler:wifi-off',
+        title: 'Founder community',
+        description: 'Connect with other founders, share challenges, and learn from collective experience.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Secure export',
-        description: 'Export approved templates and assets in a way that supports handoff and implementation.',
-        icon: 'tabler:file-download',
+        title: '1:1 guidance',
+        description: 'Get personalized advice on implementing systems in your specific business context.',
+        icon: 'tabler:phone',
       },
       {
-        title: 'Frequent updates',
-        description: 'Access new templates and improvements as the app evolves with practical feedback.',
+        title: 'Regular updates',
+        description: 'New frameworks, guides, and resources added based on founder feedback and market trends.',
         icon: 'tabler:refresh',
       },
       {
-        title: 'Wishlist support',
-        description: 'Save templates you want to revisit later and compare before making a final decision.',
-        icon: 'tabler:heart',
+        title: 'Success stories',
+        description: 'Learn how other founders implemented these systems and the results they achieved.',
+        icon: 'tabler:award',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Feature illustration',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Founder community and support',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Additional benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Support and community</h3>
     </Fragment>
   </Content>
 
   <Stats
-    title="App statistics"
+    title="Founder Impact"
     stats={[
-      { amount: '20K', icon: 'tabler:download' },
-      { amount: '18.5K', icon: 'tabler:users' },
-      { amount: '4.7', icon: 'tabler:user-star' },
+      { amount: '500+', icon: 'tabler:users' },
+      { amount: '50M+', icon: 'tabler:currency-dollar' },
+      { amount: '95%', icon: 'tabler:award' },
     ]}
   />
 
   <Testimonials
-    title="What our users say"
+    title="What founders say"
     testimonials={[
       {
         testimonial:
-          'The app made it simple to find website templates and compare options quickly. The preview flow helped us decide with confidence.',
-        name: 'Cary Kennedy',
-        job: 'Film director',
+          'The frameworks saved us months of figuring things out. We went from chaos to a working operating system in 60 days. Our team finally knows what we\'re doing.',
+        name: 'Sarah Chen',
+        job: 'Founder & CEO',
         image: {
           src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-          alt: 'Cary Kennedy Image',
+          alt: 'Sarah Chen',
         },
       },
       {
         testimonial:
-          'Previewing templates and making small edits was intuitive and fast. It helped our team move from idea to implementation without extra overhead.',
-        name: 'Josh Wilkinson',
-        job: 'Product Manager',
+          'The 1:1 guidance when implementing the hiring system was invaluable. We went from reactive hiring to strategic hiring. Game changer.',
+        name: 'Marcus Williams',
+        job: 'Co-founder',
         image: {
           src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-          alt: 'Josh Wilkinson Image',
+          alt: 'Marcus Williams',
         },
       },
       {
         testimonial:
-          'Downloading the right template and previewing it in a mobile view made the process much easier than our old setup.',
-        name: 'Sidney Hansen',
-        job: 'Decorator',
+          'Having access to decision templates for the tough founder moments made all the difference. The playbooks work because they\'re designed by people who get startups.',
+        name: 'Elena Rodriguez',
+        job: 'Founder',
         image: {
           src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-          alt: 'Sidney Hansen Image',
+          alt: 'Elena Rodriguez',
         },
       },
     ]}
     callToAction={{
       target: '_blank',
-      text: 'Read more testimonials',
+      text: 'Read more founder stories',
       href: '/contact',
       icon: 'tabler:chevron-right',
     }}
   />
 
   <FAQs
-    title="Still have questions?"
+    title="Founder support questions"
     items={[
       {
-        title: 'What does this app do?',
+        title: 'What kind of founders use this platform?',
         description:
-          'It helps you browse, preview, and select website templates in a mobile-friendly workflow with practical next steps.',
+          'Early-stage founders, scaling founders, technical founders who need operational help, and experienced founders building their next company.',
       },
       {
-        title: 'How does it help me?',
-        description: 'It speeds up template discovery and keeps the focus on launch-ready choices, not busywork.',
+        title: 'Are the frameworks customizable for my business model?',
+        description: 'Yes. The frameworks are starting points. The 1:1 guidance helps you adapt them to your specific context and market.',
       },
       {
-        title: 'Is it available on mobile?',
-        description: 'Yes, the app is designed to work on a wide range of devices so you can keep moving on the go.',
+        title: 'How much time do I need to invest?',
+        description: 'Implementation varies. Some frameworks take a few hours, others a few weeks. The key is starting and iterating, not perfection.',
       },
       {
-        title: 'What makes it different?',
-        description:
-          'It prioritizes practical delivery, clear previews, and reliable next steps rather than flashy promises.',
+        title: 'Is this for technical founders only?',
+        description: 'No. The platform serves all founder types—technical, non-technical, first-time founders, serial founders. All need systems.',
       },
       {
-        title: 'Is there a cost?',
-        description: 'The app is free to explore; paid templates or services may vary based on your project needs.',
+        title: 'When will I see results?',
+        description: 'Clarity comes within days. Real operational change takes 30-60 days. Business impact compounds over 90+ days.',
       },
     ]}
   />
 
   <CallToAction
     id="download"
-    title="Download the app now"
-    subtitle="Start with templates that keep your work grounded and your next step clear."
+    title="Get started with founder resources"
+    subtitle="Join 500+ founders building operational systems that actually work. Get your first framework today."
   >
     <div slot="actions" class="flex max-w-sm gap-4">
       <Button variant="link" href={appStoreDownloadLink}>

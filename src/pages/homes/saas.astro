@@ -13,7 +13,8 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
-  title: 'SaaS Landing Page',
+  title: 'Execution Systems for Founders | Radynox-Draivra',
+  description: 'Build operational clarity, systems, and execution frameworks for sustainable founder-led growth.',
 };
 ---
 
@@ -24,13 +25,13 @@ const metadata = {
       actions={[
         {
           variant: 'secondary',
-          text: 'Login',
-          href: '#',
+          text: 'Explore Our Work',
+          href: '/about',
         },
         {
           variant: 'primary',
-          text: 'Sign Up',
-          href: '#',
+          text: 'Start Your Journey',
+          href: '/contact',
         },
       ]}
       isSticky
@@ -40,66 +41,62 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="SaaS Web Demo"
+    tagline="Founder Execution Systems"
     actions={[
-      { variant: 'primary', target: '_blank', text: 'Get Started', href: '/contact' },
+      { variant: 'primary', target: '_blank', text: 'Talk to us', href: '/contact' },
       { text: 'Learn more', href: '#features' },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Radynox-Draivra Hero Image',
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Founder building systems',
     }}
   >
     <Fragment slot="title">
-      Simplify web design with Radynox-Draivra: <br /> your ultimate <span class="text-accent dark:text-white"
-        >SaaS</span
-      > companion<br />
+      Build operational <span class="text-accent dark:text-white">systems that scale</span><br /> with Radynox-Draivra
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Elevate your website creation process with <span class="font-semibold">Radynox-Draivra</span>'s SaaS solutions.</span
-      >
-      We deliver founder-focused digital support, practical execution, and growth-ready delivery to help your business move
-      faster.
+        Most founders struggle with execution clarity. We help you establish operational systems, clear workflows, and sustainable processes that reduce pressure and enable real growth.</span>
+      We focus on practical operations—not theory.
     </Fragment>
 
     <Features
       id="features"
-      title="Why choose Radynox-Draivra?"
-      subtitle="Each of the following features enhances Radynox-Draivra's value proposition."
+      title="Why Execution Systems Matter"
+      subtitle="Founders often confuse activity with progress. We build the systems that create clarity, efficiency, and sustainable growth."
       columns={2}
       items={[
         {
-          title: 'Founder-focused digital support',
+          title: 'Operations Clarity',
           description:
-            'Combines delivery, execution planning, and systems design so your SaaS business can launch and iterate with confidence.',
+            'Define roles, workflows, and decision-making processes so everyone moves aligned toward the same goal.',
           icon: 'tabler:layers-union',
         },
         {
-          title: 'Versatile design for startups, small businesses, and more',
-          description: `Easily customize Radynox-Draivra to harmonize with the unique branding and identity of your venture. Radynox-Draivra's versatile design adapts to suit your needs.`,
+          title: 'Scalable Processes',
+          description: `Build repeatable systems today that grow with your business tomorrow. Stop reinventing the wheel every quarter.`,
           icon: 'tabler:artboard',
         },
         {
-          title: 'Effortless customization for portfolios and marketing sites',
+          title: 'Team Alignment',
           description:
-            'With intuitive customization, easily showcase portfolio pieces, case studies, project highlights, and relevant content. Ideal for creative professionals and businesses looking to highlight their expertise.',
+            'Create clarity around strategy, ownership, and accountability so your team operates like a cohesive unit.',
           icon: 'tabler:writing',
         },
         {
-          title: 'Optimized landing pages and engaging blogs',
-          description: `Landing pages are strategically designed to captivate visitors and prompt specific actions. Additionally, the blog creation feature empowers sharing insights, engaging the audience.`,
+          title: 'Founder Breathing Room',
+          description: `When systems are in place, you spend less time managing chaos and more time on strategic decisions and growth.`,
           icon: 'tabler:podium',
         },
         {
-          title: 'Fast delivery and reliable execution',
-          description: `Our work is designed to move quickly without compromising quality, helping your business launch faster and stay responsive to customers.`,
+          title: 'Execution Speed',
+          description: `Clear systems mean faster decisions, fewer meetings, and real progress toward your business milestones.`,
           icon: 'tabler:rocket',
         },
         {
-          title: 'SEO-ready support for growth',
-          description: `We help shape content, messaging, and structure so your SaaS offering gets noticed by customers and potential partners.`,
+          title: 'Sustainable Growth',
+          description: `Build growth that doesn't require you to work 80-hour weeks. Real founders deserve real lives.`,
           icon: 'tabler:eyeglass',
         },
       ]}
@@ -108,28 +105,28 @@ const metadata = {
     <!-- Content Widget **************** -->
 
     <Content
-      title="Use cases"
-      subtitle="Discover how Radynox-Draivra's versatile digital solutions serve as the ideal support for growth-minded founders."
+      title="Early-Stage Founder Systems"
+      subtitle="Most early-stage founders are stuck in founder-mode: wearing every hat, making every decision, grinding without clear systems."
       isReversed
       items={[
         {
-          title: 'Description:',
+          title: 'The Problem:',
           description:
-            'Are you a startup with big dreams? Radynox-Draivra propels your success by building digital execution, website delivery, and operational systems that attract customers from day one.',
+            'You\'re managing everything yourself. Marketing, operations, customer success, hiring—all on your shoulders. This is unsustainable.',
         },
         {
-          title: 'Benefits:',
-          description: `Allow startups to quickly create professional websites without investing extensive time and resources. <br /> Make a memorable first impression with visually appealing design elements that highlight your startup's unique value proposition. <br /> Ensures your website looks stunning and works well on all devices. <br /> Engage potential investors and customers with engaging content, clear messaging, and intuitive navigation.`,
+          title: 'Our Approach:',
+          description: `We help you define clear roles and workflows. <br /> Build repeatable processes for your most important activities. <br /> Create decision-making frameworks so you\'re not consulted for every small choice. <br /> Establish metrics that actually matter to your growth. <br /> Move from chaos to controlled execution.`,
         },
       ]}
       image={{
-        src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
-        alt: 'Startup Image',
+        src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
+        alt: 'Founder building systems',
       }}
     >
       <Fragment slot="content">
         <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-          Startup success stories: <br /><span class="text-2xl">Launching with Radynox-Draivra</span>
+          From Chaos to Clarity <br /><span class="text-2xl">Building Your First Operating System</span>
         </h3>
       </Fragment>
 
@@ -144,22 +141,22 @@ const metadata = {
       isAfterContent={true}
       items={[
         {
-          title: 'Description:',
-          description: `For SaaS businesses, user experience is key. Radynox-Draivra enhances SaaS storytelling with intuitive interfaces and clear messaging so your value is easier to understand and act on.`,
+          title: 'The Challenge:',
+          description: `Growth companies face a unique problem: your old systems don't scale. What worked for 5 people breaks at 15. What worked for 15 breaks at 50.`,
         },
         {
-          title: 'Benefits:',
-          description: `Ensuring a cohesive and user-centric design for your SaaS website. <br /> Effectively communicate complex SaaS features through visual aids, animations, and interactive elements. <br /> Prioritize user needs and pain points through well-structured layouts and clear navigation. <br /> Encourage visitors to take action with strategically placed CTAs. <br /> Ensures your SaaS website works seamlessly across all devices.`,
+          title: 'Our Solution:',
+          description: `We audit your current operations and identify bottlenecks. <br /> Build scalable workflows that your team can execute without constant oversight. <br /> Create accountability structures that maintain quality as you grow. <br /> Establish feedback loops so you catch problems early. <br /> Move from firefighting to strategic leadership.`,
         },
       ]}
       image={{
-        src: 'https://images.unsplash.com/photo-1531973486364-5fa64260d75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1658&q=80',
-        alt: 'SaaS Businesses Image',
+        src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1658&q=80',
+        alt: 'Growing team',
       }}
     >
       <Fragment slot="content">
         <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-          SaaS showcase: <br /><span class="text-2xl">Streamlining user experience</span>
+          Scale Without Breaking <br /><span class="text-2xl">Operations for Growing Teams</span>
         </h3>
       </Fragment>
 
@@ -175,22 +172,22 @@ const metadata = {
       isAfterContent={true}
       items={[
         {
-          title: 'Description:',
-          description: `Your portfolio is your masterpiece, and Radynox-Draivra is your canvas. Whether you're a designer, photographer, artist, or any other creative professional, we empower you to showcase your work with elegance and sophistication. Tailored to highlight your creative projects, our services offer a visually immersive experience that lets your portfolio shine.`,
+          title: 'Your Situation:',
+          description: `Revenue is growing, but you\'re spending most days on operational tasks instead of strategy. Margins are being squeezed because you\'re not tracking what you should be.`,
         },
         {
-          title: 'Benefits:',
-          description: `Serve as a captivating backdrop to showcase your creative work, capturing attention and leaving a lasting impression. <br /> Tailor your portfolio to reflect your unique style and artistic vision. <br /> Prioritizes visuals, allowing you to present your work in high-resolution detail that draws viewers into your creations. <br /> Enables seamless navigation for effortless portfolio exploration.`,
+          title: 'What We Do:',
+          description: `We define financial metrics that actually guide decision-making. <br /> Build reporting systems so you always know your unit economics. <br /> Create operational dashboards for real-time visibility. <br /> Establish forecasting processes that inform strategy. <br /> Turn data into actionable insights.`,
         },
       ]}
       image={{
-        src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-        alt: 'Portfolio Image',
+        src: 'https://images.unsplash.com/photo-1553531088-d1b88b645abd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+        alt: 'Financial systems',
       }}
     >
       <Fragment slot="content">
         <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-          Creative portfolios: <br /><span class="text-2xl">Highlighting your work</span>
+          Metrics That Matter <br /><span class="text-2xl">Financial & Operational Clarity</span>
         </h3>
       </Fragment>
 
@@ -204,22 +201,22 @@ const metadata = {
     <Content
       items={[
         {
-          title: 'Description:',
-          description: `For small businesses, a well-crafted website can be a game-changer. Radynox-Draivra empowers small businesses to not only establish a credible online presence but also convert visitors into loyal customers. Our thoughtful design and optimization help your website attract attention and guide visitors through a seamless journey, ultimately leading to conversions.`,
+          title: 'The Reality:',
+          description: `Hiring usually reveals how little documented process actually exists. New team members slow things down because there\'s no clear way to do anything.`,
         },
         {
-          title: 'Benefits:',
-          description: `Present your small business with a professional and polished website that instills confidence and trust among visitors. <br /> Strategically placed CTAs, user-friendly forms, and optimized layouts work together to drive user engagement and conversions. <br /> Ensure a smooth browsing experience, reducing bounce rates and encouraging interaction.`,
+          title: 'Our Framework:',
+          description: `We document your critical paths and knowledge. <br /> Create onboarding systems so new hires contribute faster. <br /> Build communication protocols so your team operates aligned. <br /> Establish feedback and iteration cycles for continuous improvement. <br /> Grow your team without losing your culture.`,
         },
       ]}
       image={{
-        src: 'https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-        alt: 'Small Business Image',
+        src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+        alt: 'Team collaboration',
       }}
     >
       <Fragment slot="content">
         <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-          Small business growth: <br /><span class="text-2xl">Converting visitors into customers</span>
+          Hire With Confidence <br /><span class="text-2xl">Building Your Team Operating System</span>
         </h3>
       </Fragment>
 
@@ -231,41 +228,83 @@ const metadata = {
     <!-- Pricing Widget ******************* -->
 
     <Pricing
-      title="Flexible pricing plans"
+      title="Our Engagement Models"
+      subtitle="Choose the approach that fits your business stage and execution needs."
       prices={[
         {
-          title: 'free',
-          subtitle: 'Access to core features and founder-focused digital services',
-          price: '0',
-          period: '/ month',
+          title: 'Strategy Session',
+          price: 'Custom',
+          period: '3-5 hours',
+          items: [
+            {
+              description: 'Founder & operations audit',
+            },
+            {
+              description: 'Current system gaps analysis',
+            },
+            {
+              description: 'Execution framework recommendations',
+            },
+            {
+              description: 'Strategic roadmap for next 90 days',
+            },
+          ],
           callToAction: {
             target: '_blank',
-            text: 'Get Started for Free',
-            href: '#',
+            text: 'Schedule Now',
+            href: '/contact',
           },
         },
         {
-          title: 'pro',
-          subtitle: 'Premium services and advanced execution support',
-          price: 15,
-          period: '/ Month',
+          title: 'Systems Build (Recommended)',
+          price: 'Custom',
+          period: 'Monthly',
+          items: [
+            {
+              description: 'Deep operational diagnosis',
+            },
+            {
+              description: 'Custom execution frameworks',
+            },
+            {
+              description: 'Process documentation & training',
+            },
+            {
+              description: 'Monthly implementation reviews',
+            },
+            {
+              description: 'Founder 1:1 guidance',
+            },
+          ],
           callToAction: {
             target: '_blank',
-            text: 'Upgrade to Pro',
-            href: '#',
+            text: 'Start Building',
+            href: '/contact',
           },
-          hasRibbon: true,
-          ribbonTitle: 'popular',
+          featured: true,
         },
         {
-          title: 'Enterprise',
-          subtitle: 'Tailored solutions for large-scale projects',
-          price: 45,
-          period: '/ Month',
+          title: 'Ongoing Operations',
+          price: 'Custom',
+          period: 'Quarterly',
+          items: [
+            {
+              description: 'Continuous system improvement',
+            },
+            {
+              description: 'Team coaching & development',
+            },
+            {
+              description: 'Quarterly strategy reviews',
+            },
+            {
+              description: 'Real-time support & guidance',
+            },
+          ],
           callToAction: {
             target: '_blank',
-            text: 'Unlock Enterprise Features',
-            href: '#',
+            text: 'Learn More',
+            href: '/contact',
           },
         },
       ]}
@@ -274,28 +313,28 @@ const metadata = {
     <!-- FAQs Widget ******************* -->
 
     <FAQs
-      title="Frequently Asked Questions"
+      title="Common Questions About Building Execution Systems"
+      subtitle="Clear answers for founders thinking about operational transformation."
+      columns={1}
       items={[
         {
-          title: 'Is Radynox-Draivra suited for startups and small teams?',
-          description:
-            'Yes. Radynox-Draivra is built for early-stage founders who need practical support, clear systems, and reliable delivery without excess complexity.',
+          title: 'Why do I need systems? Can\'t I just manage chaos?',
+          description: `You can manage chaos, but not at scale. What works at 3 people doesn't work at 5, 10, or 20. Systems are how founders move from "doing everything" to "leading everything."`,
           icon: 'tabler:chevrons-right',
         },
         {
-          title: 'Can I use Radynox-Draivra for both personal and commercial projects?',
-          description: `Certainly! Radynox-Draivra is versatile and can be used for a wide range of projects, including both personal and commercial endeavors. Whether you're building a professional portfolio, launching a startup, or creating a marketing website, Radynox-Draivra has you covered.`,
+          title: 'How long does it take to see results?',
+          description: `Some clarity comes immediately—just defining your critical processes helps. Real operational transformation typically takes 90-180 days of focused work. Growth and scaling results follow after that.`,
           icon: 'tabler:chevrons-right',
         },
         {
-          title: 'What level of coding knowledge is required to use Radynox-Draivra?',
-          description:
-            'While some familiarity with HTML, CSS, and web development concepts is helpful, the user-friendly interface and customization options allow those with limited coding experience to create impressive websites. For more advanced users, Radynox-Draivra offers extensive customization capabilities.',
+          title: 'Will this slow us down in the short term?',
+          description: `Maybe by a few days during implementation. But within weeks, you move faster because decisions become clearer and people know what to do without asking. The velocity gain compounds.`,
           icon: 'tabler:chevrons-right',
         },
         {
-          title: 'Is customer support available for Radynox-Draivra users seeking guidance?',
-          description: `Absolutely, our dedicated customer support team is here to assist you with any questions or challenges you may encounter. Feel free to reach out to us through our support channels, and we'll be happy to provide the help you need.`,
+          title: 'Do you work with bootstrapped startups or only funded companies?',
+          description: `We work with founders at every stage. If you're generating revenue and trying to scale, we can help. We offer session-based engagements if you want to start lean.`,
           icon: 'tabler:chevrons-right',
         },
       ]}
@@ -308,26 +347,31 @@ const metadata = {
     <!-- Steps2 Widget ****************** -->
 
     <Steps2
-      title="Reach out to us"
-      subtitle="Have questions? Feel free to contact us using the form below. We're here to help!"
+      title="How We Work: Your Path to Execution Clarity"
+      subtitle="A straightforward process to move from chaos to systems to sustainable growth."
       callToAction={{
-        text: 'Contact us',
+        text: 'Get started',
         href: '/contact',
       }}
       items={[
         {
-          title: 'Email us',
-          description: 'info@radynox.com',
+          title: 'Stage 1: Founder & Operations Audit',
+          description: `We listen. Deep dives into your current operations, biggest bottlenecks, team structure, and founder pain points. Understanding where you are is the foundation.`,
           icon: 'tabler:mail',
         },
         {
-          title: 'Call us',
-          description: '+91 74165 32840',
+          title: 'Stage 2: System Design & Roadmap',
+          description: `We design custom frameworks for your critical processes. Sales funnels, hiring systems, financial dashboards, decision-making protocols. You approve before we build.`,
           icon: 'tabler:headset',
         },
         {
-          title: 'Email us',
-          description: 'info@radynox.com',
+          title: 'Stage 3: Implementation & Training',
+          description: `We help your team adopt new systems. Documentation, training, early iteration cycles. We're here to coach, not hand off.`,
+          icon: 'tabler:mail',
+        },
+        {
+          title: 'Stage 4: Iterate & Scale',
+          description: `Once systems are live, we review what works, refine what doesn't, and prepare for the next phase of growth. Continuous improvement beats perfection.`,
           icon: 'tabler:mail',
         },
       ]}
@@ -337,8 +381,8 @@ const metadata = {
 
     <BlogLatestPosts
       id="blog"
-      title="Stay informed with Radynox-Draivra's blog"
-      information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using Radynox-Draivra effectively for your projects.`}
+      title="Founder Insights & Execution Guides"
+      information={`Explore our collection of articles, guides, and case studies on building operational systems, founder execution frameworks, and scaling your business sustainably.`}
     >
       <Fragment slot="bg">
         <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
