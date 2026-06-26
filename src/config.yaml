@@ -1,6 +1,6 @@
 site:
   name: Radynox-Draivra
-  site: 'https://radynox-draivra.com'
+  site: 'https://draivra.radynox.com'
   base: '/'
   trailingSlash: false
 
