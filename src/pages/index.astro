@@ -1,19 +1,10 @@
----
+﻿---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Content from '~/components/widgets/Content.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Radynox–Draivra™ — Practical execution support for solo founders',
+  title: 'Radynox–Draivra — Execution partnership for early-stage founders',
   ignoreTitleTemplate: true,
 };
 ---
@@ -23,348 +14,213 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get started',
-        href: '/contact',
+        text: 'Start the Conversation',
+        href: '#contact',
         icon: 'tabler:arrow-right',
       },
-      { text: 'DM Deepak', href: 'https://x.com/deepaksahani3231' },
+      {
+        text: 'Connect on LinkedIn',
+        href: 'https://www.linkedin.com/in/deepaksahani-2911b9380',
+      },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Solo founder building' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Solo founder building with clarity' }}
   >
-    <Fragment slot="title"> You're building alone. You don't have to carry this weight by yourself. </Fragment>
+    <Fragment slot="title">The Missing First Hire for Solo Founders</Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        I came from construction work with no network, no money, no team. I built Radynox–Draivra because I know what it costs to build completely alone. So I help first-time founders get practical execution support, clarity from day zero, and real guidance so you never feel abandoned.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">You're building alone. That changes today.</span>
-      Execution support, not just advice. Weekly guidance. Real clarity. For founders at the stage nobody else wants to help.
+      <span class="block text-lg font-medium leading-relaxed text-gray-700 dark:text-slate-300">
+        Execution partnership for early-stage builders — from idea to first customer, without the noise of generic advice or the cost of a co-founder.
+      </span>
     </Fragment>
   </Hero>
 
-  <!-- Note Widget ******************* -->
+  <section id="who-this-is-for" class="scroll-mt-24 py-20 sm:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Who This Is For</p>
+        <h2 class="mt-3 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          For founders who need structure before they need capital.
+        </h2>
+        <p class="mt-4 text-lg leading-8 text-gray-600 dark:text-slate-300">
+          This is built for the earliest stage — when the idea is real, the pressure is high, and most support systems have gone quiet.
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-2">
+        <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Ideal fit</h3>
+          <ul class="mt-6 space-y-3 text-gray-600 dark:text-slate-300">
+            <li>• First-time founders with no co-founder, no network, and no funding</li>
+            <li>• Builders rebuilding after a failed startup</li>
+            <li>• Idea-stage founders who need structure before they need capital</li>
+            <li>• Anyone tired of generic startup advice that does not translate to action</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Who This Is Not For</h3>
+          <ul class="mt-6 space-y-3 text-gray-600 dark:text-slate-300">
+            <li>• Funded startups looking for scaling advisors</li>
+            <li>• Founders seeking financial or legal consulting</li>
+            <li>• Teams that already have execution systems in place</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-founder" class="scroll-mt-24 border-t border-gray-200/80 py-20 sm:py-24 dark:border-slate-800">
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">About the Founder</p>
+        <h2 class="mt-3 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          Most founders do not fail because of bad ideas. They fail because they carry everything alone for too long.
+        </h2>
+        <div class="mt-6 space-y-4 text-lg leading-8 text-gray-600 dark:text-slate-300">
+          <p>
+            I am Deepak Sahani, founder of Radynox–Draivra. I came from a construction background in a small town in Uttar Pradesh — no network, no money, no team, no shortcuts.
+          </p>
+          <p>
+            I built this practice from that exact experience because I know what it costs to build completely alone. I work with founders before traction, before visibility, and before anyone is paying attention.
+          </p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Connect</h3>
+        <ul class="mt-6 space-y-4 text-gray-600 dark:text-slate-300">
+          <li>
+            <a class="font-medium text-blue-600 transition hover:text-blue-700" href="https://www.linkedin.com/in/deepaksahani-2911b9380" target="_blank">
+              linkedin.com/in/deepaksahani-2911b9380
+            </a>
+          </li>
+          <li>
+            <a class="font-medium text-blue-600 transition hover:text-blue-700" href="mailto:info@radynox.com">
+              info@radynox.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="scroll-mt-24 border-t border-gray-200/80 py-20 sm:py-24 dark:border-slate-800">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">How It Works</p>
+        <h2 class="mt-3 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          A direct working partnership for the earliest, hardest stage.
+        </h2>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-2">
+        <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Founder Foundation Building</h3>
+          <p class="mt-3 text-gray-600 dark:text-slate-300">
+            Breaking your idea down to its core and rebuilding clarity around the problem, the offer, and the next step.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Execution Support</h3>
+          <p class="mt-3 text-gray-600 dark:text-slate-300">
+            Product planning, UI/UX direction, branding, website setup, workflows, and go-to-market strategy.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Operational Structure</h3>
+          <p class="mt-3 text-gray-600 dark:text-slate-300">
+            Designing your first roles, systems, pipelines, and distribution strategy so the work becomes manageable.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Weekly Clarity Sessions</h3>
+          <p class="mt-3 text-gray-600 dark:text-slate-300">
+            So you are never stuck without a next step. This is built for the earliest stage, not scaling.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <Note
-    title="The problem:"
-    description="Most founders fail not because their idea is bad. They fail because they're building alone—no one to talk to, no systems to follow, no guidance when everything feels impossible. By pre-traction, the help dries up entirely."
+    title="Early Beta — Currently working with my first founders"
+    description="This is an early, hands-on engagement model built for the earliest, hardest stage. I am not presenting early numbers as established traction."
   />
 
-  <!-- Features Widget *************** -->
+  <section id="working-with-founders" class="scroll-mt-24 border-t border-gray-200/80 py-20 sm:py-24 dark:border-slate-800">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Working With Founders</p>
+        <h2 class="mt-3 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          Confidentiality is part of the service.
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-slate-300">
+          I am currently working closely with early-stage founders across different industries — from beverage brands to first-time product launches. Every founder’s idea is confidential until they are ready to go public.
+        </p>
+      </div>
 
-  <Features
-    id="features"
-    tagline="Who we serve"
-    title="First-time founders. Solo builders. People building with nothing."
-    subtitle="If this is you, Radynox–Draivra is for you."
-    items={[
-      {
-        title: 'First-time founders with no network',
-        description:
-          'You have an idea. No connections. No money. No team yet. You need someone who understands what that feels like.',
-        icon: 'tabler:user-circle',
-      },
-      {
-        title: 'Founders who failed and want to rebuild',
-        description:
-          'You have been through it. You learned something. Now you want to try again with better systems, better clarity, better support.',
-        icon: 'tabler:refresh',
-      },
-      {
-        title: 'Students and curious builders with ideas',
-        description:
-          'You have energy and ideas but no guidance. Nobody taught you how to turn that into something real. We help.',
-        icon: 'tabler:bulb',
-      },
-      {
-        title: 'Pre-revenue, pre-traction builders',
-        description:
-          'You are building but have not found product-market fit yet. Most advisors have moved on. We have not.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'People building completely alone',
-        description:
-          'No co-founder. No team. No one to bounce ideas off of at 11 PM when everything feels impossible. You need real support.',
-        icon: 'tabler:user',
-      },
-      {
-        title: 'Anyone rebuilding a stalled or failed idea',
-        description:
-          'You had something that did not work. But the idea has life. You want to build it right this time, with real systems.',
-        icon: 'tabler:tool',
-      },
-    ]}
-  />
+      <div class="mt-10 rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <p class="text-gray-600 dark:text-slate-300">
+          I respect that trust completely, which means you will not see names, products, or details here until my founders choose to share their story. I am also supporting founders in company formation, funding strategy, and go-to-market planning — real work, kept private by design.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <!-- Content Widget **************** -->
+  <section id="engagement" class="scroll-mt-24 border-t border-gray-200/80 py-20 sm:py-24 dark:border-slate-800">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Engagement</p>
+        <h2 class="mt-3 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          This is a founder-to-founder conversation first, not a sales pitch.
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-slate-300">
+          DM or email to share what you are building. If it is a fit, we will agree on how we work together — pricing and structure depend on your stage and needs, and will be discussed directly and transparently before anything begins.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <Content
-    isReversed
-    tagline="What we do"
-    title="Practical execution support, not just mentorship advice."
-    items={[
-      {
-        title: 'Product planning and strategy',
-        description:
-          'Help you figure out what to build first, who it is for, and why it matters. Real clarity from day zero.',
-      },
-      {
-        title: 'Branding and positioning',
-        description:
-          'Help you tell your story. What makes you different. How to stand out without pretending to be something you are not.',
-      },
-      {
-        title: 'Go-to-market and workflows',
-        description:
-          'Help you get your first customers. Build systems that work for one person. Workflows you can actually execute alone.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Practical execution support',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Weekly guidance. Real support.</h3>
-      You get access to someone who has actually built something from nothing. Someone who understands execution pressure because he lived it.
-    </Fragment>
+  <section id="contact" class="scroll-mt-24 border-t border-gray-200/80 py-20 sm:py-24 dark:border-slate-800">
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.85fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Contact</p>
+        <h2 class="mt-3 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          Start the conversation.
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-slate-300">
+          If you are building early, carrying too much alone, or need a clearer path forward, reach out. I will respond with a practical next step.
+        </p>
+      </div>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'We are NOT a scaling advisor',
-        description:
-          'We do not help you scale a business. We help you build it from zero. Once you have traction, you graduate to advisors who know that world.',
-      },
-      {
-        title: 'We are NOT a financial consultant',
-        description:
-          'We do not talk about unit economics or runway or fundraising. We talk about building systems one person can actually execute.',
-      },
-      {
-        title: 'We are NOT for funded or established startups',
-        description:
-          'If you have money, team, or traction, our work is done. You need someone else. We are for the people nobody else wants to help yet.',
-      },
-      {
-        title: 'We do not do generic startup advice',
-        description: 'We work directly with you. We understand your specific challenge. We give you actual systems, not frameworks.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'What we are not',
-    }}
-  >
-    <Fragment slot="content">We make next steps easier to see, even when the path feels unclear.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'You get practical support',
-        description:
-          'Not a dashboard, not a forum. Direct access to someone who understands execution pressure because they have lived it.',
-      },
-      {
-        title: 'You get real clarity',
-        description: 'What to build. Who it is for. How to talk about it. How to get first customers. Concrete next steps.',
-      },
-      {
-        title: 'You get weekly guidance',
-        description:
-          'Calls, messages, whatever you need. You are never the only person thinking about your business anymore.',
-      },
-      {
-        title: 'You get systems, not frameworks',
-        description:
-          'We do not give you generic advice. We help you build the actual operating systems your solo-founder life requires.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'What you actually get',
-    }}
-  >
-    <Fragment slot="content">What you actually get with Radynox–Draivra</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    id="how"
-    title="How Radynox–Draivra works"
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">You tell us your idea and challenge</span>',
-        description: 'What are you building? Where are you stuck? What keeps you up at night? We listen to understand your specific situation.',
-        icon: 'tabler:message',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">We build your execution systems</span>',
-        description: 'Together we map out: your product, your positioning, your GTM strategy, and the workflows you can actually execute alone.',
-        icon: 'tabler:hammer',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Weekly check-ins and guidance</span>',
-        description:
-          'You are never building alone. We talk every week. We troubleshoot. We refine. We keep you moving forward.',
-        icon: 'tabler:phone',
-      },
-      {
-        title: 'You get real traction',
-        description:
-          'A clear product. Real customers. Momentum. Systems that work. And the confidence that you know what you are doing.',
-        icon: 'tabler:rocket',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'How Radynox-Draivra works',
-    }}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Why Radynox–Draivra is different"
-    subtitle="We are not building another tool. We are here to help you actually build your idea."
-    tagline="The difference"
-    items={[
-      {
-        title: 'Founder-founded',
-        description:
-          'I built this because I lived it. No network. No money. No team. I know the weight you are carrying.',
-        icon: 'tabler:user-check',
-      },
-      {
-        title: 'Execution-focused',
-        description: 'We do not give you frameworks. We help you build actual systems. Things that work for one person.',
-        icon: 'tabler:hammer',
-      },
-      {
-        title: 'Weekly partnership',
-        description: 'This is not passive. You get regular guidance. We are in this together.',
-        icon: 'tabler:friends',
-      },
-      {
-        title: 'Pre-traction specialization',
-        description: 'Most advisors graduate to scaling advice once you have momentum. We specialize in the hard part: zero to traction.',
-        icon: 'tabler:star',
-      },
-      {
-        title: 'Honest about limitations',
-        description:
-          'We are not a financial advisor. Not a scaling consultant. Not for funded startups. We are for solo founders building from scratch.',
-        icon: 'tabler:circle-check',
-      },
-      {
-        title: 'You are not alone anymore',
-        description:
-          'The weight you have been carrying? You stop carrying it alone. That changes everything.',
-        icon: 'tabler:heart',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Founder notes on building alone"
-    information={`Practical guidance for solo founders. No hype. Just real strategies that work when you're the only person carrying the weight.`}
-  />
-
-  <!-- FAQs Widget ******************* -->
-
-  <FAQs
-    title="Your questions about Radynox–Draivra"
-    subtitle="Honest answers for solo founders."
-    tagline="FAQs"
-    classes={{ container: 'max-w-6xl' }}
-    items={[
-      {
-        title: 'What is Radynox–Draivra?',
-        description:
-          'Practical execution support for solo founders building from zero. Not mentorship. Not scaling advice. Real guidance on product, positioning, GTM, and the systems you need to execute alone.',
-      },
-      {
-        title: 'Who is this for?',
-        description:
-          'First-time founders with no network or money. Founders rebuilding after a failed attempt. Students with ideas. Anyone building completely alone before traction.',
-      },
-      {
-        title: 'What will you help me with?',
-        description: 'Product strategy, branding and positioning, go-to-market planning, building workflows you can execute solo, and weekly guidance on whatever is blocking you.',
-      },
-      {
-        title: 'How does this actually work?',
-        description:
-          'You tell us your idea and challenge. We build systems together. We meet weekly. We help you get to real traction with a clear product, positioning, and first customers.',
-      },
-      {
-        title: 'What are you NOT?',
-        description:
-          'We are not a financial consultant. Not a scaling advisor. Not for funded startups. Not about hiring, unit economics, or runway. We are only for solo founders at pre-traction stage.',
-      },
-      {
-        title: 'How do I get started?',
-        description: 'Visit radynox.in or DM Deepak on X. We will talk through your idea and see if we are the right fit.',
-      },
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    stats={[
-      { title: 'Founders in conversation', amount: '3+' },
-      { title: 'Institutions contacted', amount: '6' },
-      { title: 'Programs launched', amount: '1' },
-      { title: 'Cities reached', amount: '2' },
-    ]}
-  />
-
-  <!-- Contact anchor for hero CTA -->
-  <section id="contact" class="scroll-mt-24">
-    <CallToAction
-      actions={[
-        {
-          variant: 'primary',
-          text: 'Get started',
-          href: '/contact',
-          icon: 'tabler:arrow-right',
-        },
-      ]}
-    >
-      <Fragment slot="title"> You are building alone. You do not have to. </Fragment>
-
-      <Fragment slot="subtitle">
-        Execution support, clarity, and weekly guidance for the founder carrying the weight alone. Visit radynox.in or DM Deepak to start.
-      </Fragment>
-    </CallToAction>
+      <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <ul class="space-y-4 text-gray-600 dark:text-slate-300">
+          <li>
+            <span class="block text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">Email</span>
+            <a class="mt-1 inline-block font-medium text-blue-600 transition hover:text-blue-700" href="mailto:info@radynox.com">
+              info@radynox.com
+            </a>
+          </li>
+          <li>
+            <span class="block text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">Direct</span>
+            <a class="mt-1 inline-block font-medium text-blue-600 transition hover:text-blue-700" href="mailto:deepak@radynox.com">
+              deepak@radynox.com
+            </a>
+          </li>
+          <li>
+            <span class="block text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">X</span>
+            <a class="mt-1 inline-block font-medium text-blue-600 transition hover:text-blue-700" href="https://twitter.com/deepaksahani74" target="_blank">
+              twitter.com/deepaksahani74
+            </a>
+          </li>
+          <li>
+            <span class="block text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">LinkedIn</span>
+            <a class="mt-1 inline-block font-medium text-blue-600 transition hover:text-blue-700" href="https://www.linkedin.com/in/deepaksahani-2911b9380" target="_blank">
+              linkedin.com/in/deepaksahani-2911b9380
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
 </Layout>
