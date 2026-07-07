@@ -3,6 +3,16 @@
   command = "npm run build"
 [build.processing.html]
   pretty_urls = false
+[[redirects]]
+  from = "https://radynox.in/*"
+  to = "https://radynox.com/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://radynox.online/*"
+  to = "https://radynox.com/:splat"
+  status = 301
+  force = true
 [[headers]]
   for = "/_astro/*"
   [headers.values]
