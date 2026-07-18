@@ -1,5 +1,6 @@
 ---
 title: 'Privacy Policy'
+description: 'How Radynox-Draivra handles data privacy, cookies, and your information on this website.'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 

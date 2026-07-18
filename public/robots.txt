@@ -1,2 +1,19 @@
 User-agent: *
-Disallow:
+Disallow: /homes/mobile-app/
+Disallow: /homes/mobile-app.fixed/
+Disallow: /homes/personal/
+Disallow: /homes/saas/
+Disallow: /homes/startup/
+Disallow: /landing/click-through/
+Disallow: /landing/lead-generation/
+Disallow: /landing/pre-launch/
+Disallow: /landing/product/
+Disallow: /landing/sales/
+Disallow: /landing/subscription/
+Disallow: /customize-template-for-your-brand/
+Disallow: /get-started-website-with-astro-tailwind-css/
+Disallow: /markdown-elements-demo-post/
+Disallow: /template-system-in-depth/
+Disallow: /useful-resources-to-create-websites/
+
+Sitemap: https://radynox.com/sitemap-index.xml

@@ -27,7 +27,32 @@ export default defineConfig({
   output: 'static',
 
   integrations: [
-    sitemap(),
+    sitemap({
+      filter: (page) => {
+        const pathname = new URL(page).pathname;
+        const excludedPaths = [
+          '/404',
+          '/homes/mobile-app',
+          '/homes/mobile-app.fixed',
+          '/homes/personal',
+          '/homes/saas',
+          '/homes/startup',
+          '/landing/click-through',
+          '/landing/lead-generation',
+          '/landing/pre-launch',
+          '/landing/product',
+          '/landing/sales',
+          '/landing/subscription',
+          '/customize-template-for-your-brand',
+          '/get-started-website-with-astro-tailwind-css',
+          '/markdown-elements-demo-post',
+          '/template-system-in-depth',
+          '/useful-resources-to-create-websites',
+        ];
+
+        return !excludedPaths.includes(pathname);
+      },
+    }),
     mdx(),
     icon({
       include: {

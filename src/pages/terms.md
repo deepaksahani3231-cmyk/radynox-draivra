@@ -1,5 +1,6 @@
 ---
 title: 'Terms and Conditions'
+description: 'The terms governing the use of the Radynox-Draivra website and its services.'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 

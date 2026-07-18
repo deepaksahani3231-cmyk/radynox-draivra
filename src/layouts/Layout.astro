@@ -1,7 +1,7 @@
 ---
 import '~/assets/styles/tailwind.css';
 
-import { I18N } from 'radynox-draivra:config';
+import { I18N, SITE } from 'radynox-draivra:config';
 
 import CommonMeta from '~/components/common/CommonMeta.astro';
 import Favicons from '~/components/Favicons.astro';
@@ -23,6 +23,52 @@ export interface Props {
 
 const { metadata = {} } = Astro.props;
 const { language, textDirection } = I18N;
+const canonicalUrl = String(Astro.site || 'https://radynox.com') + Astro.url.pathname;
+const pageTitle = typeof metadata.title === 'string' ? metadata.title : SITE?.name || 'Radynox-Draivra';
+const isHomePage = Astro.url.pathname === '/';
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE?.name || 'Radynox-Draivra',
+  url: SITE?.site || 'https://radynox.com',
+  sameAs: ['https://www.linkedin.com/in/deepak-sahani-2911b9380/', 'https://x.com/radynoxdraivra'],
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      contactType: 'consultation',
+      email: 'info@radynox.com',
+    },
+  ],
+};
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE?.name || 'Radynox-Draivra',
+  url: SITE?.site || 'https://radynox.com',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${SITE?.site || 'https://radynox.com'}/?s={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: SITE?.site || 'https://radynox.com',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: pageTitle,
+      item: canonicalUrl,
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -35,6 +81,13 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
+    {isHomePage && (
+      <>
+        <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+      </>
+    )}
+    {!isHomePage && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
 
     <link rel="preconnect" href="https://images.unsplash.com" />
 
