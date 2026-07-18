@@ -8,7 +8,7 @@ tags:
   - growth
   - website-strategy
 metadata:
-  canonical: https://radynox-draivra.com/conversion-pages-with-clarity
+  canonical: https://radynox.com/conversion-pages-with-clarity
 ---
 
 Most teams over-design conversion pages and under-communicate value.

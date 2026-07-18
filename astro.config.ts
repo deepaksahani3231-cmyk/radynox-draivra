@@ -37,6 +37,7 @@ export default defineConfig({
           '/homes/personal',
           '/homes/saas',
           '/homes/startup',
+          '/landing',
           '/landing/click-through',
           '/landing/lead-generation',
           '/landing/pre-launch',
